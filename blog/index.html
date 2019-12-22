@@ -1,0 +1,181 @@
+---
+layout: blog
+title: Rockfund blog
+tagline: Welcome to Rockfund
+header_image:   fre-sonneveld-reduced.png
+---
+{% include JB/setup %}
+{% include JB/tags_list %}
+<div class="home" itemscope itemtype="http://schema.org/Blog">
+  <div class="header noselect">
+  {% for post in site.posts offset:0 limit:1 %}
+    {% if post.featured contains 'yes' %}
+      {% if post.thumbnail_image %}
+      <div class="">
+        <a href="{{ BASE_PATH }}{{ post.url }}">
+          <div class="header_image" style="background-image:url('/assets/images/{{ page.header_image }}');" >
+            <div class="header_text noselect">
+              <div class="center text-center featurette uppercase">Featured Article</div>
+              <div class="center text-center"><h1 class="featuretitle">{{ post.title }}</h1></div>
+              <div class="center text-center"><h3 class="featuretag">{{ post.tagline }}</h3></div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 infinite-scroll">
+        <div style="margin-top:40px;" >
+        {% for post in paginator.posts %}
+          {% if post.category == "Example" %}
+          {% else if %}
+            <div class="left_articles " itemscope itemtype="http://schema.org/BlogPosting">
+              <div class="noselect post">
+              {% assign author = site.data.authors[post.author] %}
+              {% if author %}
+                <div style="margin-bottom:20px;margin-top:20px;">
+                  <div class="pull-left">
+                    <img src="/assets/images/{{ author.thumbnail }}" class="img-circle" width="40px" alt="Business advisor"/>
+                  </div>
+                  <div class="pull-left" style="margin-left:10px">
+                    <div class="authHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+                    <div class="authText">{{ post.date | date: "%B %-d, %Y" }}</div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              {% endif %}
+              </div>
+              {% if post.thumbnail_image %}
+              <div class="noselect">
+                <div class="front_thumbnail">
+                <a href="{{ BASE_PATH }}{{ post.url }}">
+                  <img class="portrait" src="/assets/images/{{ post.thumbnail_image }}" alt="Bookkeeping and business advice"/></a>
+                </div>
+              </div>
+              {% endif %}
+              <div class="post">
+              <h3 style="padding-top:21px;"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+              {% if post.tagline %}
+              <h4 class="h4-after-h3" itemprop="description">{{ post.tagline }}</h4>
+              {% elsif post.excerpt %}
+                <p class="p-after-h3" itemprop="description">{{ post.excerpt }}</p>
+              {% endif %}
+              <div class="small" style="margin-top:30px;width:auto;"><a href="{{ BASE_PATH }}{{ post.url }}">Read More</a></div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+          <!-- Pagination links -->
+          <div class="pagination" style="visibility:hidden;">
+            {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+            {% else %}
+              <span class="previous">Previous</span>
+            {% endif %}
+            <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+            {% else %}
+              <span class="next ">Next</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="col-md-11 col-md-offset-1">
+          <div class="right_header">
+            <h3>Featured Tags</h3>
+            <div class="right_tags">
+          	  {% assign tags_list = site.tags %}
+          	  {% include JB/tags_list %}
+            </div>
+          </div>
+          <div class="right_header">
+            <h3>Top Articles</h3>
+          </div>
+          <ol class="circles-list">
+            {% for post in site.posts %}
+              {% if post.trending contains "1" %}
+                <li>
+                  <div class="right_articles">
+                    <h4><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+                      {% assign author = site.data.authors[post.author] %}
+                    <div class="subHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+                    <div class="bottom"></div>
+                  </div>
+                </li>
+              {% endif %}
+            {% endfor %}
+            {% for post in site.posts %}
+              {% if post.trending contains "2" %}
+                <li>
+                  <div class="right_articles">
+                    <h4><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+                      {% assign author = site.data.authors[post.author] %}
+                    <div class="subHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+                    <div class="bottom"></div>
+                  </div>
+                </li>
+              {% endif %}
+            {% endfor %}
+            {% for post in site.posts %}
+              {% if post.trending contains "3" %}
+                <li>
+                  <div class="right_articles">
+                    <h4><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+                      {% assign author = site.data.authors[post.author] %}
+                    <div class="subHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+                    <div class="bottom"></div>
+                  </div>
+                </li>
+              {% endif %}
+            {% endfor %}
+            {% for post in site.posts %}
+              {% if post.trending contains "4" %}
+                <li>
+                  <div class="right_articles">
+                    <h4><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+                      {% assign author = site.data.authors[post.author] %}
+                    <div class="subHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+                    <div class="bottom"></div>
+                  </div>
+                </li>
+              {% endif %}
+            {% endfor %}
+            {% for post in site.posts %}
+              {% if post.trending contains "5" %}
+                <li>
+                  <div class="right_articles">
+                    <h4><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+                      {% assign author = site.data.authors[post.author] %}
+                    <div class="subHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+                    <div class="bottom"></div>
+                  </div>
+                </li>
+              {% endif %}
+            {% endfor %}
+
+          </ol>
+          <div class="right_header">
+            <h3>About</h3>
+            <div class="">
+              <div class="pull-left" style="margin-bottom:10px;">
+                <a href="http://www.rockfund.com" target="_blank"><img src="/assets/images/rockfund_company_image.png" width="50px" alt="Zenkeep"/></a>
+              </div>
+              <div class="post">
+                <div class="pull-left aboutRight">
+                  <div class="authHeader"><a href="http://www.rockfund.com" target="_blank">Rockfund</a></div>
+                  <div class="authText">Connecting you with powerful CRE lenders</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

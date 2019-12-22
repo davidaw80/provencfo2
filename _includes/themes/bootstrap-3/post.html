@@ -1,0 +1,95 @@
+<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  {% if page.featured_image %}
+  <div class="">
+    <img src="/assets/images/{{ page.featured_image }}" width="100%"/>
+  </div>
+    {% if page.featured_image_caption %}
+    <div class="container post">
+      <div class="imageCaption"><a href="{{ page.featured_image_caption_url}}" target="_blank">{{ page.featured_image_caption }}</a></div>
+    </div>
+    {% endif %}
+  {% endif %}
+  <div class="container post">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        {% assign author = site.data.authors[page.author] %}
+        {% if author %}
+          <div style="margin-bottom:20px;margin-top:42px;">
+            <div class="pull-left">
+              <img src="/assets/images/{{ author.thumbnail }}" class="img-circle" width="40px"/>
+            </div>
+            <div class="pull-left" style="margin-left:10px">
+              <div class="authHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+              <div class="authText" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        {% endif %}
+        <div class="page-header">
+          <h3 itemprop="name">{{ page.title }}</h3>
+        </div>
+
+
+        <div class="row post-full">
+          <div class="col-xs-12">
+            <div class="content" itemprop="articleBody">
+              {{ content }}
+            </div>
+
+            {% unless page.tags == empty %}
+            <div style="margin-top:20px;">
+              <ul class="tag_box inline" itemprop="keywords">
+                <!--<li><i class="glyphicon glyphicon-tags"></i></li>-->
+                {% assign tags_list = page.tags %}
+                {% include JB/tags_list %}
+              </ul>
+            </div>
+            {% endunless %}
+            {% if author.company %}
+              <div style="margin-bottom:20px;margin-top:24px;">
+                <div class="postFooterDivider"></div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="pull-left">
+                      <img src="/assets/images/{{ author.thumbnail }}" class="img-circle" width="60px"/>
+                    </div>
+                    <div class="pull-left footerRight2">
+                      <div class="authHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+                      <div class="authText">{{ author.about }}</div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="pull-left">
+                      <img src="/assets/images/{{ author.company_image }}" width="60px"/>
+                    </div>
+                    <div class="pull-left footerRight2">
+                      <div class="authHeader"><a href="{{ author.company_url }}" target="_blank">{{ author.company }}</a></div>
+                      <div class="authText">{{ author.company_description }}</div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="postFooterDividerBottom"></div>
+              </div>
+            {% elsif author %}
+              <div style="margin-bottom:20px;margin-top:24px;">
+                <div class="postFooterDivider"></div>
+                <div class="pull-left">
+                  <img src="/assets/images/{{ author.thumbnail }}" class="img-circle" width="60px"/>
+                </div>
+                <div class="pull-left footerRight">
+                  <div class="authHeader"><a href="{{ author.web }}" target="_blank">{{ author.name }}</a></div>
+                  <div class="authText">{{ author.about }}</div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="postFooterDividerBottom"></div>
+              </div>
+            {% endif %}
+            {% include JB/comments %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

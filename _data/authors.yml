@@ -1,0 +1,29 @@
+  # Author details.
+  dave:
+      name:                 Dave Willson
+      email:                dave@zenkeep.com
+      web:                  https://www.linkedin.com/in/davidawillson
+      about:                I care about ensuring the financial picture is instantly accessible and sufficiently accurate to assist in business planning, operations, owner succession, or capitalization.
+      facebook:             DaveAWillson
+      twitter:              daveawillson
+      google_plus:          DaveAWillson1
+      image:                dave200.jpg
+      thumbnail:            dave100.jpg
+      company:              Rockfund
+      company_image:        rockfund_company_image.png
+      company_description:  The Leading US Commercial Real Estate Lending Marketplace
+      company_url:          http://www.rockfund.com
+  jon:
+      name:                 Jon Willson
+      email:                jon@zenkeep.com
+      web:                  https://www.linkedin.com/in/jonathanwillson
+      about:                I’m a firm believer in marketplace networks, and love providing real estate developers and owners the best financing options.
+      facebook:             jonowillson
+      twitter:              jonathanwillson
+      google_plus:          JonWillsonZenkeep
+      image:                jon200.jpg
+      thumbnail:            jon100.jpg
+      company:              Rockfund
+      company_image:        rockfund_company_image.png
+      company_description:  The Leading US Commercial Real Estate Lending Marketplace
+      company_url:          http://www.rockfund.com
