@@ -1,0 +1,191 @@
+
+html,
+body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+}
+
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin:0 auto;
+}
+
+.stdContainer {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.spacer {
+  border-bottom: 1px dashed #181818;
+  width:100%;
+}
+
+.blackBanner {
+  background-color:#181818;
+  margin:0 auto;
+}
+.unevenDark {
+  background-image: url('/assets/images/unevenDark.png');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:-10px;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 38px;
+  letter-spacing: 0.1px;
+}
+
+p.quote {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+p.author {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+h4 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+
+}
+h5 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.1px;
+}
+
+
+.provencfo_logo {
+  background: url('/assets/images/provenCFO_logo.png') 149px 47px;
+  width: 149px;
+  height: 47px;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+  border-radius: 0rem;
+  margin-bottom:0px;
+}
+
+.header_image {
+  background: url('/assets/images/Illustration_01.png') 868px 618px;
+  width: 868px;
+  height: 618px;
+}
+
+.companyLogos {
+}
+
+.logo_clarke {
+  background: url('/assets/images/logo_clarke.png') 131px 61px;
+  width: 131px;
+  height: 61px;
+}
+.logo_kiln {
+  background: url('/assets/images/logo_kiln.png') 75px 38px;
+  width: 75px;
+  height: 38px;
+  margin-top: 8px;
+}
+
+.logo_kiln_dark {
+  background: url('/assets/images/logo_kiln_dark.png') 72px 36px;
+  width: 72px;
+  height: 36px;
+}
+
+.logo_oxpine {
+  background: url('/assets/images/logo_oxpine.png') 108px 38px;
+  width: 108px;
+  height: 38px;
+  margin-top:8px;
+}
+
+.smallBold {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+}
+
+.rightWhiteArrow {
+  background: url('/assets/images/rightWhiteArrow.png') 13px 11px;
+  width: 13px;
+  height: 11px;
+}
+
+.btn-primary {
+  background: #181818;
+  border-radius: 4px;
+  border-color: #181818;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px
+}
+
+.icon_difference {
+  background: url('/assets/images/icon_difference.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+ }
+
+/*Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+ }
+
+/* Large devices (desktops, 992px and up */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
