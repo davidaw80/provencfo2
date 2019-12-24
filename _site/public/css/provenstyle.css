@@ -2,13 +2,33 @@
 html,
 body {
   height: 100%;
-}
-
-h1, h2, h3, h4, h5, h6, p {
   font-family: 'Libre Franklin';
   font-style: normal;
 }
 
+.beach_blue {
+  background-color: #A3FFF6;
+}
+
+.fresh_yellow {
+  background-color:#FFE68E;
+}
+
+.passion_red {
+  background-color: #EC7965;
+}
+
+.wisdom_purple {
+  background-color: #A4AEF1;
+}
+
+.growth_green {
+  background-color: #5BCE81;
+}
+
+.truth_blue {
+  background-color: #5892E6;
+}
 
 #page-content {
   flex: 1 0 auto;
@@ -16,6 +36,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 #sticky-footer {
   flex-shrink: none;
+}
+
+.bg-dark {
+  background-color: #181818 !important;
 }
 
 .container {
@@ -39,12 +63,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .unevenDark {
   background-image: url('/assets/images/unevenDark.png');
-  background-size:     cover;
-  background-repeat:   no-repeat;
+  background-size: cover;
+  background-repeat: repeat;
   background-position: center center;
   height: 20px;
   width: auto;
-  margin-top:-10px;
+  margin-top:0px;
 }
 
 p {
@@ -92,7 +116,18 @@ h5 {
   text-align: center;
   letter-spacing: -0.1px;
 }
+h6 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+}
 
+.navbar-light .navbar-nav .nav-link {
+  color: #181818;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
 
 .provencfo_logo {
   background: url('/assets/images/provenCFO_logo.png') 149px 47px;
@@ -140,8 +175,7 @@ h5 {
   margin-top:8px;
 }
 
-.smallBold {
-  font-weight: bold;
+.small {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.1px;
@@ -163,14 +197,91 @@ h5 {
   line-height: 24px
 }
 
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+    background-color: #3e3e3e;
+    border-color: #3e3e3e;
+    box-shadow: none;
+}
+
 .icon_difference {
   background: url('/assets/images/icon_difference.png') 64px 64px;
   width: 64px;
   height: 64px;
 }
 
+.color_box {
+  border-radius: 6px;
+}
+
+.color_box p.inner {
+  min-height:66px;
+}
+
+.icon_position {
+  top:-33px;
+}
+
+.icon_bookkeeping {
+  background: url('/assets/images/icon_bookkeeping.png') 62px 64px;
+  width: 62px;
+  height: 64px;
+  top:-33px;
+  margin-bottom:14px;
+}
+
+.icon_payroll {
+  background: url('/assets/images/icon_payroll.png') 64px 56px;
+  width: 64px;
+  height: 56px;
+  top:-33px;
+  margin-bottom: 22px;
+}
 
 
+.icon_billpay {
+  background: url('/assets/images/icon_billpay.png') 62px 64px;
+  width: 62px;
+  height: 64px;
+  top:-33px;
+  margin-bottom:14px;
+}
+
+.icon_CFOadvisory {
+  background: url('/assets/images/icon_CFOadvisory.png') 64px 63px;
+  width: 64px;
+  height: 63px;
+  top:-33px;
+  margin-bottom:15px;
+}
+
+.icon_Capitaladvisory {
+  background: url('/assets/images/icon_Capitaladvisory.png') 64px 62px;
+  width: 64px;
+  height: 62px;
+  top:-33px;
+  margin-bottom:16px;
+}
+
+.icon_CFOapp {
+  background: url('/assets/images/icon_CFOapp.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+  top:-33px;
+  margin-bottom:14px;
+}
+
+.newIcon {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  background-color:#E01E5A;
+  border-radius: 4px;
+  display: inline-block;
+  top:-63px;
+  position:relative;
+}
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query since this is the default in Bootstrap */
 
