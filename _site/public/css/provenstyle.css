@@ -42,6 +42,10 @@ body {
   background-color: #181818 !important;
 }
 
+.bg-light {
+  background-color: #F5F2F2 !important;
+}
+
 .container {
   max-width: 1440px;
   margin:0 auto;
@@ -71,6 +75,16 @@ body {
   margin-top:0px;
 }
 
+.unevenLight {
+  background-image: url('/assets/images/unevenLight.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
+
 p {
   font-style: normal;
   font-weight: normal;
@@ -92,6 +106,13 @@ p.author {
   letter-spacing: 0.1px;
 }
 
+p.medium {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -102,6 +123,13 @@ h1 {
   line-height: 60px;
   letter-spacing: -1px;
 }
+
+h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+}
+
 h4 {
   font-weight: bold;
   font-size: 40px;
@@ -147,7 +175,8 @@ h6 {
   height: 618px;
 }
 
-.companyLogos {
+.rightBorder {
+  border-right: 1px dashed #000000;
 }
 
 .logo_clarke {
@@ -183,6 +212,12 @@ h6 {
 
 .rightWhiteArrow {
   background: url('/assets/images/rightWhiteArrow.png') 13px 11px;
+  width: 13px;
+  height: 11px;
+}
+
+.rightBlackArrow {
+  background: url('/assets/images/rightBlackArrow.png') 13px 11px;
   width: 13px;
   height: 11px;
 }
@@ -268,6 +303,18 @@ h6 {
   height: 64px;
   top:-33px;
   margin-bottom:14px;
+}
+
+.icon_USA {
+  background: url('/assets/images/icon_USA.png') 62px 44px;
+  width: 62px;
+  height: 44px;
+}
+
+.icon_heart {
+  background: url('/assets/images/icon_heart.png') 48px 48px;
+  width: 48px;
+  height: 48px;
 }
 
 .newIcon {
