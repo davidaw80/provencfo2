@@ -163,6 +163,12 @@ h6 {
   height: 47px;
 }
 
+.provencfo_logo_dark {
+  background: url('/assets/images/provenCFO_logo_dark.png') 149px 47px;
+  width: 149px;
+  height: 47px;
+}
+
 .jumbotron {
   background-color: #ffffff;
   border-radius: 0rem;
@@ -204,9 +210,54 @@ h6 {
   margin-top:8px;
 }
 
+.logo_xero {
+  background: url('/assets/images/logo_xero.png') 80px 80px;
+  width:80px;
+  height: 80px;
+}
+
+.logo_qb {
+  background: url('/assets/images/logo_qb.png') 80px 80px;
+  width: 80px;
+  height: 80px;
+}
+
+.logo_gusto {
+  background: url('/assets/images/logo_gusto.png') 160px 62px;
+  width: 160px;
+  height: 62px;
+}
+
+.logo_stripe {
+  background: url('/assets/images/logo_stripe.png') 160px 68px;
+  width: 160px;
+  height: 68px;
+}
+
+
+
+
 .small {
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: -0.1px;
+}
+
+.small24 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+.small32 {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.1px;
+}
+
+.tiny {
+  font-size: 13px;
+  line-height: 16px;
   letter-spacing: -0.1px;
 }
 
@@ -315,6 +366,23 @@ h6 {
   background: url('/assets/images/icon_heart.png') 48px 48px;
   width: 48px;
   height: 48px;
+}
+
+.icon_twitter {
+  background: url('/assets/images/icon_twitter.png') 16px 14px;
+  width: 16px;
+  height: 14px;
+}
+
+.icon_facebook {
+  background: url('/assets/images/icon_facebook.png') 16px 16px;
+  width: 16px;
+  height: 16px;
+}
+.icon_linkedin {
+  background: url('/assets/images/icon_linkedin.png') 16px 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .newIcon {
