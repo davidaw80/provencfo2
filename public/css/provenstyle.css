@@ -10,6 +10,10 @@ body {
   background-color: #A3FFF6;
 }
 
+.beach_blue_text {
+ color:#A3FFF6 !important;
+}
+
 .fresh_yellow {
   background-color:#FFE68E;
 }
@@ -85,6 +89,16 @@ body {
   margin-top:0px;
 }
 
+.unevenLight_top {
+  background-image: url('/assets/images/unevenLight_top.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
+
 p {
   font-style: normal;
   font-weight: normal;
@@ -124,6 +138,11 @@ h1 {
   letter-spacing: -1px;
 }
 
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+}
+
 h3 {
   font-weight: bold;
   font-size: 22px;
@@ -138,7 +157,6 @@ h4 {
 
 }
 h5 {
-  font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
@@ -203,6 +221,29 @@ h6 {
   height: 36px;
 }
 
+.logo_clarke_dark {
+  background: url('/assets/images/logo_clarke_dark.png') 131px 61px;
+  width: 131px;
+  height: 61px;
+  left:-11px;
+  position:relative;
+}
+
+.logo_oxpine_dark {
+  background: url('/assets/images/logo_oxpine_dark.png') 103px 36px;
+  width: 103px;
+  height: 36px;
+
+}
+
+.logo_finnemma_dark {
+  background: url('/assets/images/logo_finnemma_dark.png') 180px 112px;
+  width: 180px;
+  height: 112px;
+  left:-20px;
+  position:relative;
+}
+
 .logo_oxpine {
   background: url('/assets/images/logo_oxpine.png') 108px 38px;
   width: 108px;
@@ -234,7 +275,11 @@ h6 {
   height: 68px;
 }
 
-
+.icon_bookkeeping_blue {
+  background: url('/assets/images/icon_bookkeeping_blue.png') 37px 36px;
+  width: 37px;
+  height: 36px;
+}
 
 
 .small {
@@ -291,6 +336,30 @@ h6 {
 
 .icon_difference {
   background: url('/assets/images/icon_difference.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.icon_integrate {
+  background: url('/assets/images/icon_integrate.png') 69px 64px;
+  width: 69px;
+  height: 64px;
+}
+
+.icon_record {
+  background: url('/assets/images/icon_record.png') 65px 66px;
+  width: 65px;
+  height: 66px;
+}
+
+.icon_report {
+  background: url('/assets/images/icon_report.png') 65px 66px;
+  width: 65px;
+  height: 66px;
+}
+
+.icon_automate {
+  background: url('/assets/images/icon_automate.png') 64px 64px;
   width: 64px;
   height: 64px;
 }
