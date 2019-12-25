@@ -16,7 +16,7 @@ locale:         en_us # eg. en_us
 url:            "http://www.provencfo.com" # URL of site, include http://, do not include a trailing slash
 production_url: "http://www.provencfo.com" # URL of site, include http://, do not include a trailing slash
 name:           "ProvenCFO"
-description:    "We provide custom external CFO, Controller, and Bookkeeping services; fully-integrated software solutions; and C-level advisory to our small and medium-sized business (SMB) clients."
+description:    "Your Trusted Business Advisor. Growing a business is challenging. ProvenCFO will guide you through every stage of your growth."
 # icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
 # fb_admins:      732381563472720
 # fb_appid:       your facebook app id
