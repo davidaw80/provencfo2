@@ -77,7 +77,7 @@
     <div id="page-content">
       <nav class="navbar navbar-expand-lg navbar-light py-3 fixed-top bg-white">
         <div class="container">
-          <div class="provencfo_logo"></div>
+          <a href="index.html"><div class="provencfo_logo"></div></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -88,7 +88,7 @@
                   Solutions
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Bookkeeping</a>
+                  <a class="dropdown-item" href="bookkeeping.html">Bookkeeping</a>
                   <a class="dropdown-item" href="#">Payroll</a>
                   <a class="dropdown-item" href="#">Bill Pay</a>
                   <a class="dropdown-item" href="#">CFO Advisory</a>
@@ -207,13 +207,11 @@
         <div class="icon_bookkeeping position-relative icon_position ml-5"></div>
         <h6 class="ml-5">Bookkeeping</h6>
         <p class="small mx-5 mt-4 inner">Our bookkeeping process is <span class="bold">continuous</span>, ensuring your financial reporting is accurate and current.</p>
-        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button-addon2">
-          <a href="bookkeeping.html">
-            <div class="d-flex justify-content-center">
-              <div class="d-inline p-1" align="center"><p class="small bold text-center mb-0">Learn more</p</div>
-              <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
-            </div>
-          </a>
+        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button_bookkeeping" onclick="window.location.href = 'bookkeeping.html';">
+          <div class="d-flex justify-content-center">
+            <div class="d-inline p-1" align="center"><p class="small bold text-center mb-0">Learn more</p></div>
+            <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
+          </div>
         </button>
       </div>
     </div>
@@ -222,7 +220,7 @@
         <div class="icon_payroll position-relative icon_position ml-5"></div>
         <h6 class="ml-5">Payroll</h6>
         <p class="small mx-5 mt-4 inner">Our approach to payroll saves you money, time, and energy, so you can <span class="bold">focus</span> on growing your business.</p>
-        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button-addon2">
+        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button_payroll">
           <div class="d-flex justify-content-center">
             <div class="d-inline p-1" align="center"><p class="small bold text-center mb-0">Learn more</p></div>
             <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
@@ -235,7 +233,7 @@
         <div class="icon_billpay position-relative icon_position ml-5"></div>
         <h6 class="ml-5">Bill Pay</h6>
         <p class="small mx-5 mt-4 inner">Our payment protocols eliminates clutter and administrative headache. Putting you in <span class="bold">control.</span></p>
-        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button-addon2">
+        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button_billpay">
           <div class="d-flex justify-content-center">
             <div class="d-inline p-1" align="center"><p class="small bold text-center mb-0">Learn more</p></div>
             <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
@@ -248,7 +246,7 @@
         <div class="icon_CFOadvisory position-relative icon_position ml-5"></div>
         <h6 class="ml-5">CFO Advisory</h6>
         <p class="small mx-5 mt-4 inner">As your business <span class="bold">scales up</span>, utilize our extensive intelligence dashboards, KPI reporting, and so much more.</p>
-        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button-addon2">
+        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button_cfoadvisory">
           <div class="d-flex justify-content-center">
             <div class="d-inline p-1" align="center"><p class="small bold text-center mb-0">Learn more</p></div>
             <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
@@ -261,7 +259,7 @@
         <div class="icon_Capitaladvisory position-relative icon_position ml-5"></div>
         <h6 class="ml-5">Capital Advisory</h6>
         <p class="small mx-5 mt-4 inner">Business growth requires capital. We <span class="bold">open doors</span> to both traditional and non-traditional sources of financing.</p>
-        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button-addon2">
+        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button_capitaladvisory">
           <div class="d-flex justify-content-center">
             <div class="d-inline p-1" align="center"><p class="small bold text-center mb-0">Learn more</p></div>
             <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
@@ -275,7 +273,7 @@
         <div class="newIcon text-center px-2 float-right py-1 mr-3">NEW</div>
         <h6 class="ml-5">CFO App</h6>
         <p class="small mx-5 mt-4 inner">We’ve built an <span class="bold">industry leading tool</span> to streamline financial communication and provide detailed reporting.</p>
-        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button-addon2">
+        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button_cfoapp">
           <div class="d-flex justify-content-center">
             <div class="d-inline p-1" align="center"><p class="small bold text-center mb-0">Learn more</p></div>
             <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
@@ -367,7 +365,7 @@
           </div>
           <div class="col-lg-2 col-sm-6 col-12 mt-lg-0 mt-3">
             <div class="bold text-left mb-4">Solutions</div>
-            <div class="text-left mb-2">Bookkeeping</div>
+            <div class="text-left mb-2"><a href="bookkeeping.html">Bookkeeping</a></div>
             <div class="text-left mb-2">Payroll</div>
             <div class="text-left mb-2">Accounts Payable</div>
             <div class="text-left mb-2">CFO Advisory</div>
