@@ -18,6 +18,10 @@ body {
   background-color:#FFE68E;
 }
 
+.fresh_yellow_text {
+  color:#FFE68E !important;
+}
+
 .passion_red {
   background-color: #EC7965;
 }
@@ -78,6 +82,27 @@ body {
   width: auto;
   margin-top:0px;
 }
+
+.unevenBeachBlue {
+  background-image: url('/assets/images/unevenBeachBlue.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
+
+.unevenFreshYellow {
+  background-image: url('/assets/images/unevenFreshYellow.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
+
 
 .unevenLight {
   background-image: url('/assets/images/unevenLight.png');
@@ -292,6 +317,12 @@ h6 {
   height: 36px;
 }
 
+.icon_payroll_yellow {
+  background: url('/assets/images/icon_payroll_yellow.png') 36px 36px;
+  width: 36px;
+  height: 36px;
+}
+
 .icon_pricing {
   background: url('/assets/images/icon_pricing.png') 65px 64px;
   width: 65px;
@@ -381,6 +412,29 @@ h6 {
 
 .icon_automate {
   background: url('/assets/images/icon_automate.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.icon_technology {
+  background: url('/assets/images/icon_technology.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.icon_experience {
+  background: url('/assets/images/icon_experience.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.icon_access {
+  background: url('/assets/images/icon_access.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_partnerships {
+  background: url('/assets/images/icon_partnerships.png') 64px 64px;
   width: 64px;
   height: 64px;
 }
