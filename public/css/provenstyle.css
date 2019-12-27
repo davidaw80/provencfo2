@@ -34,8 +34,15 @@ body {
   background-color: #A4AEF1;
 }
 
+.wisdom_purple_text {
+  color: #A4AEF1 !important;
+}
+
 .growth_green {
   background-color: #5BCE81;
+}
+.growth_green_text {
+  color: #5BCE81;
 }
 
 .truth_blue {
@@ -112,6 +119,15 @@ body {
 }
 .unevenPassionRed {
   background-image: url('/assets/images/unevenPassionRed.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
+.unevenWisdomPurple {
+  background-image: url('/assets/images/unevenWisdomPurple.png');
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
@@ -345,6 +361,17 @@ h6 {
   height: 36px;
 }
 
+.icon_CFOadvisory_purple {
+  background: url('/assets/images/icon_CFOadvisory_purple.png') 36px 36px;
+  width: 36px;
+  height: 36px;
+}
+.icon_Capitaladvisory_green {
+  background: url('/assets/images/icon_Capitaladvisory_green.png') 36px 36px;
+  width: 36px;
+  height: 36px;
+}
+
 
 .icon_pricing {
   background: url('/assets/images/icon_pricing.png') 65px 64px;
@@ -463,6 +490,37 @@ h6 {
 }
 .icon_plan {
   background: url('/assets/images/icon_plan.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.icon_verify {
+  background: url('/assets/images/icon_verify.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_schedule {
+  background: url('/assets/images/icon_schedule.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_fulfil {
+  background: url('/assets/images/icon_fulfil.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_systemDesign {
+  background: url('/assets/images/icon_systemDesign.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_modeling {
+  background: url('/assets/images/icon_modeling.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_KPIdashboards {
+  background: url('/assets/images/icon_KPIdashboards.png') 64px 64px;
   width: 64px;
   height: 64px;
 }
