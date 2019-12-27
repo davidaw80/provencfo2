@@ -23,7 +23,11 @@ body {
 }
 
 .passion_red {
-  background-color: #EC7965;
+  background-color: #EC9080;
+}
+
+.passion_red_text {
+  color: #EC9080 !important;
 }
 
 .wisdom_purple {
@@ -36,6 +40,10 @@ body {
 
 .truth_blue {
   background-color: #5892E6;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 #page-content {
@@ -95,6 +103,15 @@ body {
 
 .unevenFreshYellow {
   background-image: url('/assets/images/unevenFreshYellow.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
+.unevenPassionRed {
+  background-image: url('/assets/images/unevenPassionRed.png');
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
@@ -322,6 +339,12 @@ h6 {
   width: 36px;
   height: 36px;
 }
+.icon_billpay_red {
+  background: url('/assets/images/icon_billpay_red.png') 36px 36px;
+  width: 36px;
+  height: 36px;
+}
+
 
 .icon_pricing {
   background: url('/assets/images/icon_pricing.png') 65px 64px;
@@ -435,6 +458,11 @@ h6 {
 }
 .icon_partnerships {
   background: url('/assets/images/icon_partnerships.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_plan {
+  background: url('/assets/images/icon_plan.png') 64px 64px;
   width: 64px;
   height: 64px;
 }
