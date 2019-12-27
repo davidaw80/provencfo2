@@ -135,6 +135,15 @@ body {
   width: auto;
   margin-top:0px;
 }
+.unevenGrowthGreen {
+  background-image: url('/assets/images/unevenGrowthGreen.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
 
 
 .unevenLight {
@@ -176,14 +185,14 @@ p {
   letter-spacing: 0.1px;
 }
 
-p.quote {
+.quote {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
 }
 
-p.author {
+.author {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.1px;
@@ -371,6 +380,11 @@ h6 {
   width: 36px;
   height: 36px;
 }
+.icon_about {
+  background: url('/assets/images/icon_about.png') 36px 36px;
+  width: 36px;
+  height: 36px;
+}
 
 
 .icon_pricing {
@@ -524,6 +538,27 @@ h6 {
   width: 64px;
   height: 64px;
 }
+.icon_structure {
+  background: url('/assets/images/icon_structure.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_capexperience {
+  background: url('/assets/images/icon_capexperience.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_debtAdvisory {
+  background: url('/assets/images/icon_debtAdvisory.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_relationships {
+  background: url('/assets/images/icon_relationships.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
 
 .check_mark {
   background: url('/assets/images/check_mark.png') 17px 24px;
@@ -622,6 +657,21 @@ h6 {
   background: url('/assets/images/icon_linkedin.png') 16px 16px;
   width: 16px;
   height: 16px;
+}
+.icon_linkedinDark {
+  background: url('/assets/images/icon_linkedinDark.png') 24px 24px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: -20px;
+  left: 231px;
+  float:left;
+  display: inline-block;
+}
+
+.weirdposition {
+  position:relative;
+  left:-24px;
 }
 
 .newIcon {
