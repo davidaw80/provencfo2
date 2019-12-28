@@ -13,6 +13,9 @@ body {
 .beach_blue_text {
  color:#A3FFF6 !important;
 }
+.highlight_beachblue {
+  background: linear-gradient(to bottom, #FFFFFF 70%,#FFFFFF 70%,#FFFFFF 70%,#A3FFF6 30%,#A3FFF6 70%);
+}
 
 .fresh_yellow {
   background-color:#FFE68E;
@@ -77,6 +80,11 @@ body {
 .stdContainer {
   padding-top: 130px;
   padding-bottom: 130px;
+}
+
+.smallContainer {
+  padding-top:70px;
+  padding-bottom:70px;
 }
 
 .spacer {
@@ -206,11 +214,15 @@ p {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.notbold {
+  font-weight: normal !important;
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 56px;
   line-height: 60px;
   letter-spacing: -1px;
@@ -222,13 +234,13 @@ h2 {
 }
 
 h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 32px;
 }
 
 h4 {
-  font-weight: bold;
+  font-weight:800;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.5px;
@@ -241,7 +253,7 @@ h5 {
   letter-spacing: -0.1px;
 }
 h6 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 32px;
 }
@@ -434,7 +446,7 @@ h6 {
   background: #181818;
   border-radius: 4px;
   border-color: #181818;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-size: 16px;
   line-height: 24px
@@ -558,8 +570,37 @@ h6 {
   width: 64px;
   height: 64px;
 }
+.icon_givingback {
+  background: url('/assets/images/icon_givingback.png') 62px 60px;
+  width: 62px;
+  height: 60px;
+  position:relative;
+  top:-20px;
+  left:50px;
+  margin-bottom:0px;
+}
+.icon_worklife {
+  background: url('/assets/images/icon_worklife.png') 64px 67px;
+  width: 64px;
+  height: 67px;
+  position:relative;
+  top:-20px;
+  left:50px;
+  margin-bottom:-7px;
+}
+.icon_teamwork {
+  background: url('/assets/images/icon_teamwork.png') 64px 36px;
+  width: 64px;
+  height: 36px;
+  position:relative;
+  top:-20px;
+  left:50px;
+  margin-bottom:24px;
+}
 
-
+.min-height-66 {
+  min-height: 66px;
+}
 .check_mark {
   background: url('/assets/images/check_mark.png') 17px 24px;
   width: 17px;
@@ -672,6 +713,15 @@ h6 {
 .weirdposition {
   position:relative;
   left:-24px;
+}
+
+.weirdposition2 {
+  top:170px;
+  left:60px;
+}
+.photo_placeholder {
+  width:255px;
+  height:230px;
 }
 
 .newIcon {
