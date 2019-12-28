@@ -58,4 +58,10 @@
 <url>
 <loc>http://localhost:4000/payroll</loc>
 </url>
+<url>
+<loc>http://localhost:4000/teamwork</loc>
+</url>
+<url>
+<loc>http://localhost:4000/worklife</loc>
+</url>
 </urlset>

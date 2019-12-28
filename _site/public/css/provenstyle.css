@@ -125,6 +125,15 @@ body {
   width: auto;
   margin-top:0px;
 }
+.unevenFreshYellow_top {
+  background-image: url('/assets/images/unevenFreshYellow_top.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
 .unevenPassionRed {
   background-image: url('/assets/images/unevenPassionRed.png');
   background-size: cover;
@@ -153,6 +162,16 @@ body {
   width: auto;
   margin-top:0px;
 }
+.unevenWisdomPurple_top {
+  background-image: url('/assets/images/unevenWisdomPurple_top.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
+
 .unevenGrowthGreen {
   background-image: url('/assets/images/unevenGrowthGreen.png');
   background-size: cover;
@@ -336,7 +355,6 @@ h6 {
   background: url('/assets/images/logo_oxpine_dark.png') 103px 36px;
   width: 103px;
   height: 36px;
-
 }
 
 .logo_finnemma_dark {
@@ -421,7 +439,20 @@ h6 {
   width: 36px;
   height: 36px;
 }
+.icon_worklife_purple {
+  background: url('/assets/images/icon_worklife_purple.png') 35px 36px;
+  width: 35px;
+  height: 36px;
+}
+.icon_teamwork_yellow {
+  background: url('/assets/images/icon_teamwork_yellow.png') 36px 21px;
+  width: 36px;
+  height: 21px;
+}
 
+.height500 {
+  min-height: 500px;
+}
 
 .icon_about {
   background: url('/assets/images/icon_about.png') 36px 36px;
