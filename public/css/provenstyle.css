@@ -51,6 +51,9 @@ body {
 .truth_blue {
   background-color: #5892E6;
 }
+.truth_blue_text {
+  color: #5892E6 !important;
+}
 
 .cursor {
   cursor: pointer;
@@ -181,6 +184,15 @@ body {
   width: auto;
   margin-top:0px;
 }
+.unevenTruthBlue {
+  background-image: url('/assets/images/unevenTruthBlue.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 20px;
+  width: auto;
+  margin-top:0px;
+}
 
 
 .unevenLight {
@@ -269,7 +281,7 @@ h3 {
 }
 
 h4 {
-  font-weight:800;
+  font-weight:700;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.5px;
@@ -449,11 +461,9 @@ h6 {
   width: 36px;
   height: 21px;
 }
-
 .height500 {
   min-height: 500px;
 }
-
 .icon_about {
   background: url('/assets/images/icon_about.png') 36px 36px;
   width: 36px;
@@ -463,6 +473,11 @@ h6 {
   background: url('/assets/images/icon_pricing.png') 65px 64px;
   width: 65px;
   height: 64px;
+}
+.icon_whyproven {
+  background: url('/assets/images/icon_whyproven.png') 36px 36px;
+  width: 36px;
+  height: 36px;
 }
 
 
@@ -627,6 +642,26 @@ h6 {
 }
 .icon_relationships {
   background: url('/assets/images/icon_relationships.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_fullservice {
+  background: url('/assets/images/icon_fullservice.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_capable {
+  background: url('/assets/images/icon_capable.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_scalable {
+  background: url('/assets/images/icon_scalable.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon_CFOapp_blue {
+  background: url('/assets/images/icon_CFOapp_blue.png') 64px 64px;
   width: 64px;
   height: 64px;
 }
