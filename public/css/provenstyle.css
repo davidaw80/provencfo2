@@ -458,8 +458,11 @@ h6 {
 }
 .icon_teamwork_yellow {
   background: url('/assets/images/icon_teamwork_yellow.png') 36px 21px;
+  background-position: top left;
+  background-repeat: no-repeat;
   width: 36px;
   height: 21px;
+
 }
 .height500 {
   min-height: 500px;
