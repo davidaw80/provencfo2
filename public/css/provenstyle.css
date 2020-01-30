@@ -520,6 +520,12 @@ h6 {
   height: 11px;
 }
 
+.Checkbox {
+  background: url('/assets/images/w.png') 13px 11px;
+  width: 13px;
+  height: 11px;
+}
+
 .btn-primary {
   background: #181818;
   border-radius: 4px;
@@ -705,7 +711,13 @@ h6 {
   height: 24px;
   position:relative;
   top:6px;
+}
 
+.check_mark2 {
+  background: url('/assets/images/Checkmark.png') 15px 14px;
+  width: 15px;
+  height: 14px;
+  position:relative;
 }
 
 .color_box {
@@ -835,7 +847,16 @@ h6 {
   position:relative;
 }
 
-
+.backsplashtest {
+  background-image: url('/assets/images/backsplashtest.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height:600px;
+  background-color:white;
+}
 .col-2dot4,
 .col-sm-2dot4,
 .col-md-2dot4,

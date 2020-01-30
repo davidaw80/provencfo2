@@ -1,28 +1,20 @@
 
 http://www.provencfo.com/404
+http://www.provencfo.com/CFOadvisory
+http://www.provencfo.com/CapitalAdvisory
 http://www.provencfo.com/about
-http://www.provencfo.com/accounting
 http://www.provencfo.com/atom.xml
+http://www.provencfo.com/billpay
 http://www.provencfo.com/bookkeeping
-http://www.provencfo.com/careers
-http://www.provencfo.com/categories
-http://www.provencfo.com/contact
-http://www.provencfo.com/finance
-http://www.provencfo.com/howwework
-http://www.provencfo.com/humancapital
+http://www.provencfo.com/givingback
 http://www.provencfo.com/blog/
 http://www.provencfo.com/
-http://www.provencfo.com/kilnspace
-http://www.provencfo.com/law
-http://www.provencfo.com/managementadvisory
-http://www.provencfo.com/pricing
+http://www.provencfo.com/payroll
 http://www.provencfo.com/rss.xml
-http://www.provencfo.com/services
 http://www.provencfo.com/sitemap.txt
-http://www.provencfo.com/technology
-http://www.provencfo.com/thanks
-http://www.provencfo.com/training
-http://www.provencfo.com/values
+http://www.provencfo.com/teamwork
+http://www.provencfo.com/whyproven
+http://www.provencfo.com/worklife
 http://www.provencfo.com/sitemap.xml
 
 http://www.provencfo.com/blog/business/2015/10/23/Discoveringyourpassion
