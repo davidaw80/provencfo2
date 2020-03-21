@@ -6,6 +6,63 @@ body {
   font-style: normal;
 }
 
+.sidebar {
+
+  height: 110vh; // experiment with this value, try changing to 110vh
+  min-height: 200px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+}
+
+.main {
+  height: 200vh;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main,
+.sidebar {
+  border: 5px solid $color-dark;
+  background-color: $color-background;
+  border-radius: 10px;
+  color: $color-dark;
+  padding: 15px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Decoration for demo
+
+body {
+  padding: 3%;
+  background-color: $color-body;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+code, pre {
+  background-color: #ccc;
+  padding: 0 3px;
+  border-radius: 5px;
+}
+
+.bottom {
+  justify-self: bottom;
+}
+
+.clearfix:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
 .beach_blue {
   background-color: #A3FFF6;
 }
@@ -479,6 +536,11 @@ h6 {
 }
 .icon_whyproven {
   background: url('/assets/images/icon_whyproven.png') 36px 36px;
+  width: 36px;
+  height: 36px;
+}
+.icon_questionnaire {
+  background: url('/assets/images/icon_questionnaire.png') 36px 36px;
   width: 36px;
   height: 36px;
 }
