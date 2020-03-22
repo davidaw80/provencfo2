@@ -326,7 +326,7 @@
           </div>
         </div>
         <ul class="list-inline float-left mt-5">
-          <li class="list-inline-item tiny mr-5">Terms</li>
+          <li class="list-inline-item tiny mr-5"><a href="terms.html">Terms</a></li>
           <li class="list-inline-item tiny mr-5">Privacy</li>
           <li class="list-inline-item tiny">&copy; 2019 ProvenCFO, LLC. All rights reserved</li>
         </ul>
@@ -489,7 +489,26 @@
         });
     });
     </script>
-
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
     <script>
     $(document).ready(function(){
         $('#bankaccount2').on('change', function(){
@@ -639,7 +658,26 @@
         });
     });
     </script>
-
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('newquestion');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 
     
 
