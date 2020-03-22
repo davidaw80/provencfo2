@@ -157,11 +157,6 @@
 </div>
 
 
-
-
-
-
-
 <div class="container stdContainer mt-0 pt-0">
   <div class="row justify-content-center">
     <div class="sidebar col-xl-3 col-lg-8 pb-5   d-none d-xl-block" id="navbar-side">
@@ -1057,6 +1052,7 @@
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
                 </select>
               </div>
             </div>
@@ -1067,6 +1063,7 @@
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
                 </select>
               </div>
             </div>
@@ -1087,6 +1084,7 @@
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
                 </select>
               </div>
             </div>
@@ -1156,6 +1154,7 @@
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
                 </select>
               </div>
             </div>
@@ -1166,7 +1165,99 @@
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
                 </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="purchaseorders">Does your business use purchase orders?</label>
+              <select id="purchaseorders" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show21Yes" class="myDiv21 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="PObill">Are your purchase orders converted into bills to match against payments?</label>
+                <select id="PObill" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="POIMS">Does your business use Inventory Management Software (IMS)?</label>
+              <select id="POIMS" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show22Yes" class="myDiv22 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="POIMSclear">Are payments to your vendors being coded to a “Purchases” clearing account?</label>
+                <select id="POIMSclear" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="POintegration">Is there an integration which pushes purchase information into the system that needs to be cleared?</label>
+              <select id="POintegration" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show23Yes" class="myDiv23 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="POname">What is the name of the integration?</label>
+                <input type="text" class="form-control" id="POname" placeholder="Purchase software name">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="payroll"><u>Payroll/Independent Contractors (1099)</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="employees">Do you have any employees?</label>
+              <select id="employees" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show24Yes" class="myDiv24 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="hourly"># of hourly employees</label>
+                <input type="text" class="form-control" id="hourly" placeholder="0+">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="salary"># of salaried employees</label>
+                <input type="text" class="form-control" id="salary" placeholder="0+">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="commission"># of commission employees</label>
+                <input type="text" class="form-control" id="commission" placeholder="0+">
               </div>
             </div>
           </div>
@@ -1344,6 +1435,27 @@
             $("div.myDiv20").hide();
             $("#show20"+demovalue).show();
         });
+        $('#purchaseorders').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv21").hide();
+            $("#show21"+demovalue).show();
+        });
+        $('#POIMS').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv22").hide();
+            $("#show22"+demovalue).show();
+        });
+        $('#POintegration').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv23").hide();
+            $("#show23"+demovalue).show();
+        });
+        $('#employees').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv24").hide();
+            $("#show24"+demovalue).show();
+        });
+
 
 
 
