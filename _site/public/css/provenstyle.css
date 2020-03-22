@@ -625,6 +625,8 @@ h6 {
 .hidden {
   display: none;
 }
+
+
 .icon_difference {
   background: url('/assets/images/icon_difference.png') 64px 64px;
   width: 64px;
