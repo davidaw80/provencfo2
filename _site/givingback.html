@@ -339,6 +339,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <script>
     $(document).ready(function(){
         $('#bankaccount2').on('change', function(){
@@ -391,9 +392,63 @@
             $("div.myDiv10").hide();
             $("#show10"+demovalue).show();
         });
+        $('#SuspenseAcc').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv11").hide();
+            $("#show11"+demovalue).show();
+        });
+        $('#HistoricalAcc').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv12").hide();
+            $("#show12"+demovalue).show();
+        });
+        $('#BankLoans').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv13").hide();
+            $("#show13"+demovalue).show();
+        });
+        $('#amortization').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv14").hide();
+            $("#show14"+demovalue).show();
+        });
+        $('#OtherNP').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv15").hide();
+            $("#show15"+demovalue).show();
+        });
+        $('#EquityCash').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv16").hide();
+            $("#show16"+demovalue).show();
+        });
+        $('#Ownerexpense').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv17").hide();
+            $("#show17"+demovalue).show();
+        });
+        $('#Invoicing').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv18").hide();
+            $("#show18"+demovalue).show();
+        });
+        $('#checkwriting').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv19").hide();
+            $("#show19"+demovalue).show();
+        });
+        $('#salestax').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv20").hide();
+            $("#show20"+demovalue).show();
+        });
+
+
+
 
     });
     </script>
+
 
     
 

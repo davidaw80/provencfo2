@@ -48,18 +48,18 @@ header_image:   dashboard_header1.png
         <div><a href="#FixedAssets" class="dark">Fixed Assets</a></div>
         <div class="bold">Liabilities</div>
         <div><a href="#creditcards" class="dark">Credit Cards</a></div>
-        <div>Suspense Account</div>
-        <div>Historical Adjustment</div>
-        <div>Bank Loans</div>
-        <div>Other Notes Payable</div>
+        <div><a href="#suspense" class="dark">Suspense Account</a></div>
+        <div><a href="#historical" class="dark">Historical Adjustment</a></div>
+        <div><a href="#loans" class="dark">Bank Loans</a></div>
+        <div><a href="#notepayable" class="dark">Other Notes Payable</a></div>
         <div class="bold">Equity</div>
-        <div>Owners Contributions</div>
-        <div>Owners Draws</div>
+        <div><a href="#ownerscontributions" class="dark">Owners Contributions</a></div>
+        <div><a href="#ownersdraw" class="dark">Owners Draws</a></div>
         <div class="bold">Business Income Statements</div>
         <div class="bold">Income</div>
-        <div>Sales</div>
+        <div><a href="#sales" class="dark">Sales</a></div>
         <div class="bold">Expenses</div>
-        <div>Purchases</div>
+        <div><a href="#purchases" class="dark">Purchases</a></div>
         <div>Payroll</div>
         <div>Expense Claims</div>
         <div>Other Expenses</div>
@@ -68,7 +68,7 @@ header_image:   dashboard_header1.png
       </div>
     </div>
     <div class="main col-xl-9 col-lg-8 col-md-8">
-      <div class=""data-spy="scroll" data-target="#navbar-side" data-offset="50">
+      <div class="" data-spy="scroll" data-target="#navbar-side" data-offset="0">
         <form>
           <div class="form-row" id="contact">
             <div class="form-group col-md-6">
@@ -180,10 +180,10 @@ header_image:   dashboard_header1.png
           <div class="mt-5"><h4 class="text-center" id="balancesheet">Business Balance Sheet</h4></div>
 
 
-          <div class="mt-0"><p class="text-center bold">Assets</p></div>
+          <div class="mt-5"><p class="text-center bold">Assets</p></div>
 
 
-          <div class="mt-0" ><p class="text-center" id="bankaccount"><u>Bank Accounts</u></p></div>
+          <div class="mt-5" ><p class="text-center" id="bankaccount" data-spy="scroll" data-target="#navbar-side" data-offset="0"><u>Bank Accounts</u></p></div>
           <div class="form-row">
             <div class="form-group col-md-12">
               <label for="bankaccount2">Do you have any bank accounts?</label>
@@ -195,7 +195,7 @@ header_image:   dashboard_header1.png
             </div>
           </div>
 
-          <div id="showOne" class="myDiv">
+          <div id="showOne" class="myDiv px-5">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="banknumber"># of Bank Accounts</label>
@@ -287,7 +287,7 @@ header_image:   dashboard_header1.png
               </select>
             </div>
           </div>
-          <div id="show2One" class="myDiv2">
+          <div id="show2One" class="myDiv2 px-5">
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="clearingbank">Are clearing accounts set up as bank accounts in your accounting software or as current assets?</label>
@@ -298,7 +298,7 @@ header_image:   dashboard_header1.png
                 </select>
               </div>
             </div>
-            <div id="show3BankAccount" class="myDiv3">
+            <div id="show3BankAccount" class="myDiv3 px-5">
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label for="clearingtransfer">Are the clearing amounts that come into the bank account transferred into the clearing account?</label>
@@ -369,7 +369,7 @@ header_image:   dashboard_header1.png
               </select>
             </div>
           </div>
-          <div id="show4Yes" class="myDiv4">
+          <div id="show4Yes" class="myDiv4 px-5">
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="merchantfee">Does your merchant service provider break out fee information per transaction?</label>
@@ -406,7 +406,7 @@ header_image:   dashboard_header1.png
               </select>
             </div>
           </div>
-          <div id="show5Yes" class="myDiv5">
+          <div id="show5Yes" class="myDiv5 px-5">
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="skunumber">How many individual SKU’s does the business have?</label>
@@ -431,7 +431,7 @@ header_image:   dashboard_header1.png
                 </select>
               </div>
             </div>
-            <div id="show6Yes" class="myDiv6">
+            <div id="show6Yes" class="myDiv6 px-5">
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label for="IMSpush">Does your IMS push a COGS/inventory journal entry into your accounting system on a regular basis?</label>
@@ -459,7 +459,7 @@ header_image:   dashboard_header1.png
               </select>
             </div>
           </div>
-          <div id="show7Yes" class="myDiv7">
+          <div id="show7Yes" class="myDiv7 px-5">
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="investmentcorrect">Has the investment income been accounted for correctly in your books? (INFO: Does the book statement/bank statement and online bank balance match?)</label>
@@ -482,7 +482,7 @@ header_image:   dashboard_header1.png
               </select>
             </div>
           </div>
-          <div id="show8Yes" class="myDiv8">
+          <div id="show8Yes" class="myDiv8 px-5">
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="repaymentschedule">Is there a repayment schedule?</label>
@@ -519,7 +519,7 @@ header_image:   dashboard_header1.png
               </select>
             </div>
           </div>
-          <div id="show9Yes" class="myDiv9">
+          <div id="show9Yes" class="myDiv9 px-5">
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="recurringdep">Have you scheduled a recurring manual journal entry to account for depreciation?</label>
@@ -545,7 +545,7 @@ header_image:   dashboard_header1.png
           </div>
 
 
-          <div class="mt-0"><p class="text-center bold">Liabilities</p></div>
+          <div class="mt-5"><p class="text-center bold">Liabilities</p></div>
 
 
           <div class="mt-5" ><p class="text-center" id="creditcards"><u>Credit Cards</u></p></div>
@@ -559,7 +559,7 @@ header_image:   dashboard_header1.png
               </select>
             </div>
           </div>
-          <div id="show10Yes" class="myDiv10">
+          <div id="show10Yes" class="myDiv10 px-5">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="creditnumber"># of credit card accounts</label>
@@ -615,6 +615,433 @@ header_image:   dashboard_header1.png
               </div>
             </div>
           </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="suspense"><u>Suspense account</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="SuspenseAcc">Do you have suspense account entries?</label>
+              <select id="SuspenseAcc" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Unknown">I don't know</option>
+              </select>
+            </div>
+          </div>
+          <div id="show11Yes" class="myDiv11 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="coding">Who is coding them there?</label>
+                <select id="coding" class="form-control">
+                  <option selected>select</option>
+                  <option value="Employee">An employee</option>
+                  <option value="Bookeeper">Current or previous bookkeeper</option>
+                  <option value="CPA">Current or previous CPA</option>
+                  <option value="Business owner">Business owner</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="whysuspense">Why are there suspense account entries?</label>
+                <input type="text" class="form-control" id="whysuspense" placeholder="for unknown reasons">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="uncleared">Are there historical entries in your suspense account that haven’t been cleared yet?</label>
+                <select id="uncleared" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="historical"><u>Historical Adjustment</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="HistoricalAcc">Do you have historical adjustment entries?</label>
+              <select id="HistoricalAcc" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Unknown">I don't know</option>
+              </select>
+            </div>
+          </div>
+          <div id="show12Yes" class="myDiv12 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="historicaltype">What types of transactions have been recorded?</label>
+                <input type="text" class="form-control" id="historicaltype" placeholder="strange ones">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="individually">Can we account for them individually?</label>
+                <select id="individually" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="documented">Can we document the issue for your year-end tax preparer?</label>
+                <select id="documented" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="flushed">Can we flush the adjustment through your Profit & Loss for the year?</label>
+                <select id="flushed" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="loans"><u>Bank Loans</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="BankLoans">Do you have any bank loans?</label>
+              <select id="BankLoans" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Unknown">I don't know</option>
+              </select>
+            </div>
+          </div>
+          <div id="show13Yes" class="myDiv13 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="bankloannumber"># of Bank Loans</label>
+                <input type="text" class="form-control" id="bankloannumber" placeholder="0+">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="amortization">Do you have an amortization schedule for each loan?</label>
+                <select id="amortization" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div id="show14Yes" class="myDiv14 px-5">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="documented">Are you making an adjustment between interest and repayment in your bookkeeping reconciliation?</label>
+                  <select id="documented" class="form-control">
+                    <option selected>select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Unknown">I don't know</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div id="show14No" class="myDiv14 px-5">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="flushed">Are you doing a manual journal entry to record the interest and repayment?</label>
+                  <select id="flushed" class="form-control">
+                    <option selected>select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Unknown">I don't know</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="notepayable"><u>Other Notes Payable</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="OtherNP">Do you have any notes payable?</label>
+              <select id="OtherNP" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Unknown">I don't know</option>
+              </select>
+            </div>
+          </div>
+          <div id="show15Yes" class="myDiv15 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="notepayablenumber"># of Other Notes Payable</label>
+                <input type="text" class="form-control" id="notepayablenumber" placeholder="0+">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="npschedule">Do these notes have repayment schedules?</label>
+                <select id="npschedule" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="npJE">Have you set up manual journal entries to account for accrued interest? </label>
+                <select id="npJE" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5"><p class="text-center bold">Equity</p></div>
+
+          <div class="mt-5" ><p class="text-center" id="ownerscontributions"><u>Owners Contributions</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="EquityCash">Is the owner making any direct cash contributions to the business?</label>
+              <select id="EquityCash" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Unknown">I don't know</option>
+              </select>
+            </div>
+          </div>
+          <div id="show16Yes" class="myDiv16 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="contributionsBS">Have these contributions been recorded on the Balance Sheet?</label>
+                <select id="contributionsBS" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="ownersdraw"><u>Owners Draws (expenses on behalf of owners)</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="Ownerexpense">Are there ‘Expense on behalf of owners’ accounts on the income statement?</label>
+              <select id="Ownerexpense" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Unknown">I don't know</option>
+              </select>
+            </div>
+          </div>
+          <div id="show17Yes" class="myDiv17 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="OEIS">Does the owner want to see “Expense on behalf of owners” on the income statement?</label>
+                <select id="OEIS" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5"><p class="text-center bold">Income</p></div>
+
+          <div class="mt-5" ><p class="text-center" id="sales"><u>Sales</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="Basis">Does your business recognize income using “Cash” or “Accrual” basis?</label>
+              <select id="Basis" class="form-control">
+                <option selected>select</option>
+                <option value="Cash">Cash</option>
+                <option value="Accrual">Accrual</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="salesgenerate">How does your business generate sales?</label>
+              <input type="text" class="form-control" id="salesgenerater" placeholder="how you generate sales">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="Invoicing">Does your business use invoicing software?</label>
+              <select id="Invoicing" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show18Yes" class="myDiv18 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="invoicingsoftware">What kind of invoicing software?</label>
+                <input type="text" class="form-control" id="invoicingsoftware" placeholder="software type">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="connection">Does the invoicing software connect to your accounting software?</label>
+                <select id="connection" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="functioning">Is the integration currently functioning?</label>
+                <select id="functioning" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="receivableauto">Are the receivables being automatically marked as paid or manually?</label>
+                <select id="receivableauto" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="awaitingpayment">Do you have invoices awaiting payment in your accounting software?</label>
+                <select id="awaitingpayment" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="receivablescorrect">Are your receivables correct?</label>
+                <select id="receivablescorrect" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="salestax">Does your business pay sales tax on income?</label>
+              <select id="salestax" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show20Yes" class="myDiv20 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="salestaxhelp">Would you like ProvenCFO’s support with regards to filing sales tax reports?</label>
+                <select id="salestaxhelp" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5"><p class="text-center bold">Expenses</p></div>
+
+          <div class="mt-5" ><p class="text-center" id="purchases"><u>Purchases</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="billnumber">Average # of bills paid each month?</label>
+              <input type="text" class="form-control" id="billnumber" placeholder="0+">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="checknumber">Average # of checks created each month?</label>
+              <input type="text" class="form-control" id="checknumber" placeholder="0+">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="checkwriting">Is your business using accounting software to write checks?</label>
+              <select id="checkwriting" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show19No" class="myDiv19 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="checksoftware">Are you using accounting Software to input the bills?</label>
+                <select id="checksoftware" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="checkrecon">Are those checks being reconciled through the reconciliation process?</label>
+                <select id="checkrecon" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="checkrules">Are check rules being created so that your expenses are assigned to the correct account when you write checks?</label>
+                <select id="checkrules" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
 
           <button type="submit" class="btn btn-primary">SUBMIT</button>
         </form>
