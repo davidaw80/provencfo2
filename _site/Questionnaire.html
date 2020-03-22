@@ -192,18 +192,18 @@
     </div>
     <div class="main col-xl-9 col-lg-8 col-md-8">
       <div class="" data-spy="scroll" data-target="#navbar-side" data-offset="0">
-        <form name="newquestionnaire" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+        <form name="newquestionnaire" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="success.html" novalidate>
           <p class="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </p>
           <div class="form-row" id="contact">
             <div class="form-group col-md-6">
               <label for="inputFirstName">First Name</label>
-              <input type="text" class="form-control" id="inputFirstName" placeholder="first name">
+              <input type="text" class="form-control" id="inputFirstName" placeholder="first name" required>
             </div>
             <div class="form-group col-md-6">
               <label for="inputLastName">Last Name</label>
-              <input type="text" class="form-control" id="inputLastName" placeholder="last name">
+              <input type="text" class="form-control" id="inputLastName" placeholder="last name" required>
             </div>
           </div>
           <div class="form-row">
@@ -290,11 +290,17 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputPhone">Phone number</label>
-              <input type="text" class="form-control" id="inputPhone" placeholder="888-888-8888">
+              <input type="text" class="form-control" id="inputPhone" placeholder="888-888-8888" required>
+              <div class="invalid-feedback">
+                Please provide a phonenumber
+              </div>
             </div>
             <div class="form-group col-md-6">
               <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+              <div class="invalid-feedback">
+                Please provide an email address
+              </div>
             </div>
           </div>
           <div class="form-group" >
