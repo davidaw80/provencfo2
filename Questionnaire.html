@@ -63,7 +63,10 @@ header_image:   dashboard_header1.png
     </div>
     <div class="main col-xl-9 col-lg-8 col-md-8">
       <div class="" data-spy="scroll" data-target="#navbar-side" data-offset="0">
-        <form name="newquestionnaire" method="POST" data-netlify="true">
+        <form name="newquestionnaire" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
           <div class="form-row" id="contact">
             <div class="form-group col-md-6">
               <label for="inputFirstName">First Name</label>
