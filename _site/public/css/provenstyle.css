@@ -605,8 +605,21 @@ h6 {
     box-shadow: none;
 }
 
+.btn-secondary {
+  background-color:#808080;
+  border-radius: 4px;
+  border-color: #808080;
+}
+
 .btn-lg {
   padding: 1rem 1rem !important;
+}
+
+.form-control {
+  background: #FFFFFF;
+  border: 2px solid #181818;
+  box-sizing: border-box;
+  height: 48px; 
 }
 
 .icon_difference {
@@ -938,11 +951,11 @@ h6 {
     max-width: 20%;
 }
 
-.myDiv, .myDiv2, .myDiv3, .myDiv4, .myDiv5, .myDiv6, .myDiv7, .myDiv8, .myDiv9, .myDiv10, .myDiv11, .myDiv12, .myDiv13, .myDiv14, .myDiv15, .myDiv16, .myDiv17, .myDiv18, .myDiv19, .myDiv20, .myDiv21, .myDiv22, .myDiv23, .myDiv24 {
+.myDiv, .myDiv2, .myDiv3, .myDiv4, .myDiv5, .myDiv6, .myDiv7, .myDiv8, .myDiv9, .myDiv10, .myDiv11, .myDiv12, .myDiv13, .myDiv14, .myDiv15, .myDiv16, .myDiv17, .myDiv18, .myDiv19, .myDiv20, .myDiv21, .myDiv22, .myDiv23, .myDiv24, .myDiv25, .myDiv26, .myDiv27, .myDiv28, .myDiv29 {
 	display:none;
 }
 
-#showOne, #show2One, #show3BankAccount, #show4Yes, #show5Yes, #show6Yes, #show7Yes, #show8Yes, #show9Yes, #show10Yes, #show11Yes, #show12Yes, #show13Yes, #show14Yes, #show15Yes, #show16Yes, #show17Yes, #show18Yes, #show19No, #show20Yes, #show21Yes {
+#showOne, #show2One, #show3BankAccount, #show4Yes, #show5Yes, #show6Yes, #show7Yes, #show8Yes, #show9Yes, #show10Yes, #show11Yes, #show12Yes, #show13Yes, #show14Yes, #show15Yes, #show16Yes, #show17Yes, #show18Yes, #show19No, #show20Yes, #show21Yes, {
 }
 
 

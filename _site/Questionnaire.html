@@ -159,7 +159,7 @@
 
 <div class="container stdContainer mt-0 pt-0">
   <div class="row justify-content-center">
-    <div class="sidebar col-xl-3 col-lg-8 pb-5   d-none d-xl-block" id="navbar-side">
+    <div class="sidebar col-xl-3 col-lg-8 pb-5 d-none d-xl-block" id="navbar-side">
       <div class="">
         <div class="bold"><a href="#contact" class="dark">Contact Info</a></div>
         <div class="bold"><a href="#balancesheet" class="dark">Business Balance Sheet</a></div>
@@ -184,16 +184,15 @@
         <div><a href="#sales" class="dark">Sales</a></div>
         <div class="bold">Expenses</div>
         <div><a href="#purchases" class="dark">Purchases</a></div>
-        <div>Payroll</div>
-        <div>Expense Claims</div>
-        <div>Other Expenses</div>
+        <div><a href="#payroll" class="dark">Payroll</a></div>
+        <div><a href="#expenseclaims" class="dark">Expense Claims</a></div>
         <div class="bold">Other</div>
-        <div>Paper</div>
+        <div><a href="#paper" class="dark">Paper</a></div>
       </div>
     </div>
     <div class="main col-xl-9 col-lg-8 col-md-8">
       <div class="" data-spy="scroll" data-target="#navbar-side" data-offset="0">
-        <form>
+        <form name="newquestionnaire" method="POST" data-netlify="true">
           <div class="form-row" id="contact">
             <div class="form-group col-md-6">
               <label for="inputFirstName">First Name</label>
@@ -1194,7 +1193,7 @@
           </div>
           <div class="form-row">
             <div class="form-group col-md-12">
-              <label for="POIMS">Does your business use Inventory Management Software (IMS)?</label>
+              <label for="POIMS">Does your business use Inventory Management Software (IMS) for Purchase Orders?</label>
               <select id="POIMS" class="form-control">
                 <option selected>select</option>
                 <option value="Yes">Yes</option>
@@ -1260,10 +1259,136 @@
                 <input type="text" class="form-control" id="commission" placeholder="0+">
               </div>
             </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="payrollservice">Does your business use a payroll service to pay your W2 employees?</label>
+                <select id="payrollservice" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div id="show25No" class="myDiv25 px-5">
+              <div class="form-group col-md-12">
+                <label for="payrollJE">Do you use a journal entry to account for payroll?</label>
+                <select id="payrollJE" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div id="show25Yes" class="myDiv25 px-5">
+              <div class="form-group col-md-12">
+                <label for="payrollname">What is the name of the payroll service company?</label>
+                <input type="text" class="form-control" id="payrollname" placeholder="name of payroll service">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="contractors">Do you have any contractors?</label>
+              <select id="contractors" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show26Yes" class="myDiv26 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="hourlycontractors"># of hourly contractors</label>
+                <input type="text" class="form-control" id="hourlycontractors" placeholder="0+">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="commissioncontractors"># of commission contractors</label>
+                <input type="text" class="form-control" id="commissioncontractors" placeholder="0+">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="contractorpayments">Are these contractor payments being recorded in your Accounting Software so that 1099s can be prepared at year-end?</label>
+                <select id="contractorpayments" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="w9collect">Does your business collect W9s for contractors?</label>
+                <select id="w9collect" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div id="show27Yes" class="myDiv27 px-5">
+              <div class="form-group col-md-12">
+                <label for="1099storage">Where are they being stored?</label>
+                <input type="text" class="form-control" id="1099storage" placeholder="storage location">
+              </div>
+            </div>
           </div>
 
 
-          <button type="submit" class="btn btn-primary">SUBMIT</button>
+          <div class="mt-5" ><p class="text-center" id="expenseclaims"><u>Expense Claims</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="reimburse">Is the business owner using “Expenses Claims” to reimburse themselves?</label>
+              <select id="reimburse" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show28Yes" class="myDiv28 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="reimburseteach">Would you like ProvenCFO to teach you how to effectively utilize “Expense Claims”?</label>
+                <select id="reimburseteach" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5"><p class="text-center bold">Other</p></div>
+
+          <div class="mt-5" ><p class="text-center" id="paper"><u>Paper</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="papergen">Does your business generate lots of paper?</label>
+              <select id="papergen" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show29Yes" class="myDiv29 px-5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="hubdoc">Would you be open to exploring using either Shoeboxed, ReceiptBank, or HubDoc? </label>
+                <select id="hubdoc" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-secondary btn-lg btn-block mt-5">SUBMIT</button>
         </form>
       </div>
     </div>
@@ -1336,130 +1461,300 @@
     <script>
     $(document).ready(function(){
         $('#bankaccount2').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv").hide();
             $("#show"+demovalue).show();
         });
         $('#myselection2').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv2").hide();
             $("#show2"+demovalue).show();
         });
         $('#clearingbank').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv3").hide();
             $("#show3"+demovalue).show();
         });
         $('#acceptcredit').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv4").hide();
             $("#show4"+demovalue).show();
         });
         $('#inventoryhandle').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv5").hide();
             $("#show5"+demovalue).show();
         });
         $('#IMS').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv6").hide();
             $("#show6"+demovalue).show();
         });
         $('#investmentCA').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv7").hide();
             $("#show7"+demovalue).show();
         });
         $('#debtors').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv8").hide();
             $("#show8"+demovalue).show();
         });
         $('#FA').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv9").hide();
             $("#show9"+demovalue).show();
         });
         $('#creditcarduse').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv10").hide();
             $("#show10"+demovalue).show();
         });
         $('#SuspenseAcc').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv11").hide();
             $("#show11"+demovalue).show();
         });
         $('#HistoricalAcc').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv12").hide();
             $("#show12"+demovalue).show();
         });
         $('#BankLoans').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv13").hide();
             $("#show13"+demovalue).show();
         });
         $('#amortization').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv14").hide();
             $("#show14"+demovalue).show();
         });
         $('#OtherNP').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv15").hide();
             $("#show15"+demovalue).show();
         });
         $('#EquityCash').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv16").hide();
             $("#show16"+demovalue).show();
         });
         $('#Ownerexpense').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv17").hide();
             $("#show17"+demovalue).show();
         });
         $('#Invoicing').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv18").hide();
             $("#show18"+demovalue).show();
         });
         $('#checkwriting').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv19").hide();
             $("#show19"+demovalue).show();
         });
         $('#salestax').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv20").hide();
             $("#show20"+demovalue).show();
         });
         $('#purchaseorders').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv21").hide();
             $("#show21"+demovalue).show();
         });
         $('#POIMS').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv22").hide();
             $("#show22"+demovalue).show();
         });
         $('#POintegration').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv23").hide();
             $("#show23"+demovalue).show();
         });
         $('#employees').on('change', function(){
-        	var demovalue = $(this).val();
+          var demovalue = $(this).val();
             $("div.myDiv24").hide();
             $("#show24"+demovalue).show();
         });
+        $('#payrollservice').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv25").hide();
+            $("#show25"+demovalue).show();
+        });
+        $('#contractors').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv26").hide();
+            $("#show26"+demovalue).show();
+        });
+        $('#w9collect').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv27").hide();
+            $("#show27"+demovalue).show();
+        });
+        $('#reimburse').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv28").hide();
+            $("#show28"+demovalue).show();
+        });
+        $('#papergen').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv29").hide();
+            $("#show29"+demovalue).show();
+        });
+    });
+    </script>
 
-
-
-
-
+    <script>
+    $(document).ready(function(){
+        $('#bankaccount2').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv").hide();
+            $("#show"+demovalue).show();
+        });
+        $('#myselection2').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv2").hide();
+            $("#show2"+demovalue).show();
+        });
+        $('#clearingbank').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv3").hide();
+            $("#show3"+demovalue).show();
+        });
+        $('#acceptcredit').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv4").hide();
+            $("#show4"+demovalue).show();
+        });
+        $('#inventoryhandle').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv5").hide();
+            $("#show5"+demovalue).show();
+        });
+        $('#IMS').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv6").hide();
+            $("#show6"+demovalue).show();
+        });
+        $('#investmentCA').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv7").hide();
+            $("#show7"+demovalue).show();
+        });
+        $('#debtors').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv8").hide();
+            $("#show8"+demovalue).show();
+        });
+        $('#FA').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv9").hide();
+            $("#show9"+demovalue).show();
+        });
+        $('#creditcarduse').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv10").hide();
+            $("#show10"+demovalue).show();
+        });
+        $('#SuspenseAcc').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv11").hide();
+            $("#show11"+demovalue).show();
+        });
+        $('#HistoricalAcc').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv12").hide();
+            $("#show12"+demovalue).show();
+        });
+        $('#BankLoans').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv13").hide();
+            $("#show13"+demovalue).show();
+        });
+        $('#amortization').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv14").hide();
+            $("#show14"+demovalue).show();
+        });
+        $('#OtherNP').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv15").hide();
+            $("#show15"+demovalue).show();
+        });
+        $('#EquityCash').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv16").hide();
+            $("#show16"+demovalue).show();
+        });
+        $('#Ownerexpense').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv17").hide();
+            $("#show17"+demovalue).show();
+        });
+        $('#Invoicing').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv18").hide();
+            $("#show18"+demovalue).show();
+        });
+        $('#checkwriting').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv19").hide();
+            $("#show19"+demovalue).show();
+        });
+        $('#salestax').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv20").hide();
+            $("#show20"+demovalue).show();
+        });
+        $('#purchaseorders').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv21").hide();
+            $("#show21"+demovalue).show();
+        });
+        $('#POIMS').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv22").hide();
+            $("#show22"+demovalue).show();
+        });
+        $('#POintegration').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv23").hide();
+            $("#show23"+demovalue).show();
+        });
+        $('#employees').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv24").hide();
+            $("#show24"+demovalue).show();
+        });
+        $('#payrollservice').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv25").hide();
+            $("#show25"+demovalue).show();
+        });
+        $('#contractors').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv26").hide();
+            $("#show26"+demovalue).show();
+        });
+        $('#w9collect').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv27").hide();
+            $("#show27"+demovalue).show();
+        });
+        $('#reimburse').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv28").hide();
+            $("#show28"+demovalue).show();
+        });
+        $('#papergen').on('change', function(){
+          var demovalue = $(this).val();
+            $("div.myDiv29").hide();
+            $("#show29"+demovalue).show();
+        });
     });
     </script>
 
