@@ -27,21 +27,27 @@ header_image:   dashboard_header1.png
   </div>
 </div>
 
+
+
+
+
+
+
 <div class="container stdContainer mt-0 pt-0">
   <div class="row justify-content-center">
     <div class="sidebar col-xl-3 col-lg-8 pb-5   d-none d-xl-block" id="navbar-side">
-      <div class="pl-1 pl-md-4 ml-md-0 ml-lg-0 ml-xl-n3">
-        <div class="bold"><a href="#contact">Contact Info</a></div>
-        <div class="bold"><a href="#balancesheet">Business Balance Sheet</a></div>
+      <div class="">
+        <div class="bold"><a href="#contact" class="dark">Contact Info</a></div>
+        <div class="bold"><a href="#balancesheet" class="dark">Business Balance Sheet</a></div>
         <div class="bold">Assets</div>
-        <div><a href="#bankaccount">Bank Accounts</a></div>
-        <div>Clearing Acccounts</div>
-        <div>Credit cards in transit</div>
-        <div>Inventory</div>
-        <div>Other Current Assets</div>
-        <div>Fixed Assets</div>
+        <div><a href="#bankaccount" class="dark">Bank Accounts</a></div>
+        <div><a href="#clearingaccount" class="dark">Clearing Acccounts</a></div>
+        <div><a href="#creditcardtransit" class="dark">Credit cards in transit</a></div>
+        <div><a href="#Inventory" class="dark">Inventory</a></div>
+        <div><a href="#OtherCA" class="dark">Other Current Assets</a></div>
+        <div><a href="#FixedAssets" class="dark">Fixed Assets</a></div>
         <div class="bold">Liabilities</div>
-        <div>Credit Cards</div>
+        <div><a href="#creditcards" class="dark">Credit Cards</a></div>
         <div>Suspense Account</div>
         <div>Historical Adjustment</div>
         <div>Bank Loans</div>
@@ -170,28 +176,443 @@ header_image:   dashboard_header1.png
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="tell us about your business"></textarea>
           </div>
 
+
           <div class="mt-5"><h4 class="text-center" id="balancesheet">Business Balance Sheet</h4></div>
+
+
           <div class="mt-0"><p class="text-center bold">Assets</p></div>
+
+
           <div class="mt-0" ><p class="text-center" id="bankaccount"><u>Bank Accounts</u></p></div>
           <div class="form-row">
             <div class="form-group col-md-12">
-              <label for="inputState">Do you have any bank accounts?</label>
-              <select id="inputState" class="form-control">
+              <label for="bankaccount2">Do you have any bank accounts?</label>
+              <select id="bankaccount2" class="form-control">
                 <option selected>select</option>
-                <option>Yes</option>
-                <option>No</option>
+                <option value="One">Yes</option>
+                <option value="Two">No</option>
               </select>
             </div>
           </div>
-          <div class="mt-5" ><p class="text-center" id="bankaccount"><u>Clearing Accounts</u></p></div>
+
+          <div id="showOne" class="myDiv">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="banknumber"># of Bank Accounts</label>
+                <input type="text" class="form-control" id="banknumber" placeholder="0+">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="avetrans">Average # of Monthly Transactions</label>
+                <input type="text" class="form-control" id="avetrans" placeholder="0+">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="bankredundant">Are any bank accounts redundant?</label>
+                <select id="bankredundant" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="bankfeed">Are all bank accounts available by bank feed?</label>
+                <select id="bankfeed" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="bankaccess">Can we obtain read-only online access?</label>
+                <select id="bankaccess" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="bankstatement">Does your statement balance in your books match the current balance for your bank accounts (not including pending items)?</label>
+                <select id="bankstatement" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="bankpositive">Are the statement balances positive (debit) amounts in your books?</label>
+                <select id="bankpositive" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="banktransfers">Are transfers between bank/credit/gateway accounts being handled correctly?</label>
+                <select id="banktransfers" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="clearingaccount"><u>Clearing Accounts</u></p></div>
           <div class="form-row">
             <div class="form-group col-md-12">
-              <label for="inputState">Do you use clearing accounts (i.e. credit cards in transit)?</label>
-              <select id="inputState" class="form-control">
+              <label for="myselection2">Do you use clearing accounts (i.e. credit cards in transit)?</label>
+              <select id="myselection2" class="form-control">
                 <option selected>select</option>
-                <option>Yes</option>
-                <option>No</option>
+                <option value="One">Yes</option>
+                <option value="Two">No</option>
+                <option value="Unknown">I don't know</option>
               </select>
+            </div>
+          </div>
+          <div id="show2One" class="myDiv2">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="clearingbank">Are clearing accounts set up as bank accounts in your accounting software or as current assets?</label>
+                <select id="clearingbank" class="form-control">
+                  <option selected>select</option>
+                  <option value="BankAccount">Bank</option>
+                  <option value="CurrentAsset">Current Asset</option>
+                </select>
+              </div>
+            </div>
+            <div id="show3BankAccount" class="myDiv3">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="clearingtransfer">Are the clearing amounts that come into the bank account transferred into the clearing account?</label>
+                  <select id="clearingtransfer" class="form-control">
+                    <option selected>select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Unknown">I don't know</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="clearingadjusting">Is the statement balance adjusting or does it need to be adjusted manually?</label>
+                  <select id="clearingadjusting" class="form-control">
+                    <option selected>select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Unknown">I don't know</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="clearingzero">Do clearing accounts ever get close to zero?</label>
+                <select id="clearingzero" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="clearingbalance">Do clearing accounts maintain a regular average balance?</label>
+                <select id="clearingbalance" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="clearingchange">Do clearing accounts increase and/or decrease without an entry offsetting the amount?</label>
+                <select id="clearingchange" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="creditcardtransit"><u>Credit Cards in Transit</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="acceptcredit">Do you accept credit cards as payment from customers/clients?</label>
+              <select id="acceptcredit" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show4Yes" class="myDiv4">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="merchantfee">Does your merchant service provider break out fee information per transaction?</label>
+                <select id="merchantfee" class="form-control">
+                  <option selected>select</option>
+                  <option value="One">Yes</option>
+                  <option value="Two">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="merchantfee">Do you have online access to merchant service transaction detail?</label>
+                <select id="merchantfee" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="Inventory"><u>Inventory</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inventoryhandle">Does your business handle inventory?</label>
+              <select id="inventoryhandle" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show5Yes" class="myDiv5">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="skunumber">How many individual SKU’s does the business have?</label>
+                <select id="skunumber" class="form-control">
+                  <option selected>select</option>
+                  <option value="0 - 10">0 - 10</option>
+                  <option value="10 - 100">10 - 100</option>
+                  <option value="100 - 250">100 - 250</option>
+                  <option value="250 - 1000">250 - 1,000</option>
+                  <option value="1000 - 10000">1,000 - 10,000</option>
+                  <option value="10000+">10,000 +</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="IMS">Does your business use Inventory Management Software (IMS)?</label>
+                <select id="IMS" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div id="show6Yes" class="myDiv6">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="IMSpush">Does your IMS push a COGS/inventory journal entry into your accounting system on a regular basis?</label>
+                  <select id="IMSpush" class="form-control">
+                    <option selected>select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Unknown">I don't know</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="OtherCA"><u>Other Current Assets</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="investmentCA">Are there investment accounts that need to be accounted for as current assets? </label>
+              <select id="investmentCA" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Unknown">I don't know</option>
+              </select>
+            </div>
+          </div>
+          <div id="show7Yes" class="myDiv7">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="investmentcorrect">Has the investment income been accounted for correctly in your books? (INFO: Does the book statement/bank statement and online bank balance match?)</label>
+                <select id="investmentcorrect" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="debtors">Is there anyone that owes the business money?</label>
+              <select id="debtors" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show8Yes" class="myDiv8">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="repaymentschedule">Is there a repayment schedule?</label>
+                <select id="repaymentschedule" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="CAinterest">Are you recording the interest income?</label>
+                <select id="CAinterest" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5" ><p class="text-center" id="FixedAssets"><u>Fixed Assets</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="FA">Does your business purchase Fixed Assets?</label>
+              <select id="FA" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show9Yes" class="myDiv9">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="recurringdep">Have you scheduled a recurring manual journal entry to account for depreciation?</label>
+                <select id="recurringdep" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="FAledger">Have you created a fixed asset ledger?</label>
+                <select id="FAledger" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-0"><p class="text-center bold">Liabilities</p></div>
+
+
+          <div class="mt-5" ><p class="text-center" id="creditcards"><u>Credit Cards</u></p></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="creditcarduse">Do you have any credit cards?</label>
+              <select id="creditcarduse" class="form-control">
+                <option selected>select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div id="show10Yes" class="myDiv10">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="creditnumber"># of credit card accounts</label>
+                <input type="text" class="form-control" id="creditnumber" placeholder="0+">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="credavetrans">Average # of Monthly Transactions</label>
+                <input type="text" class="form-control" id="credavetrans" placeholder="0+">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="cardfeed">Are all credit cards available by bank feed?</label>
+                <select id="cardfeed" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="cardaccess">Can we obtain read-only online access?</label>
+                <select id="cardaccess" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="cardstatement">Does the statement balance in your accounting software match the current balance for your credit cards?</label>
+                <select id="cardstatement" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="cardnegative">Are the statement balances negative (credit) amounts in your books?</label>
+                <select id="cardnegative" class="form-control">
+                  <option selected>select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Unknown">I don't know</option>
+                </select>
+              </div>
             </div>
           </div>
 

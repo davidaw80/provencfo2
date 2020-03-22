@@ -428,7 +428,61 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        $('#bankaccount2').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv").hide();
+            $("#show"+demovalue).show();
+        });
+        $('#myselection2').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv2").hide();
+            $("#show2"+demovalue).show();
+        });
+        $('#clearingbank').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv3").hide();
+            $("#show3"+demovalue).show();
+        });
+        $('#acceptcredit').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv4").hide();
+            $("#show4"+demovalue).show();
+        });
+        $('#inventoryhandle').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv5").hide();
+            $("#show5"+demovalue).show();
+        });
+        $('#IMS').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv6").hide();
+            $("#show6"+demovalue).show();
+        });
+        $('#investmentCA').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv7").hide();
+            $("#show7"+demovalue).show();
+        });
+        $('#debtors').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv8").hide();
+            $("#show8"+demovalue).show();
+        });
+        $('#FA').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv9").hide();
+            $("#show9"+demovalue).show();
+        });
+        $('#creditcarduse').on('change', function(){
+        	var demovalue = $(this).val();
+            $("div.myDiv10").hide();
+            $("#show10"+demovalue).show();
+        });
 
+    });
+    </script>
 
     
 

@@ -8,7 +8,7 @@ body {
 
 .sidebar {
 
-  height: 110vh; // experiment with this value, try changing to 110vh
+  height: 80vh; // experiment with this value, try changing to 110vh
   min-height: 200px;
   overflow: auto;
   position: -webkit-sticky;
@@ -21,6 +21,7 @@ body {
   min-height: 1000px;
   display: flex;
   flex-direction: column;
+  overflow:auto;
 }
 
 .main,
@@ -51,6 +52,10 @@ code, pre {
   background-color: #ccc;
   padding: 0 3px;
   border-radius: 5px;
+}
+
+a.dark {
+  color: #181818 !important;
 }
 
 .bottom {
@@ -936,6 +941,15 @@ h6 {
     flex: 0 0 20%;
     max-width: 20%;
 }
+
+.myDiv, .myDiv2, .myDiv3, .myDiv4, .myDiv5, .myDiv6, .myDiv7, .myDiv8, .myDiv9, .myDiv10 {
+	display:none;
+}
+
+#showOne, #show2One, #show3BankAccount, #show4Yes, #show5Yes, #show6Yes, #show7Yes, #show8Yes, #show9Yes, #show10Yes {
+}
+
+
 @media (min-width: 540px) {
     .col-sm-2dot4 {
         -webkit-box-flex: 0;
