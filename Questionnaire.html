@@ -199,13 +199,13 @@ header_image:   dashboard_header1.png
               <label for="bankaccount2">Do you have any bank accounts?</label>
               <select id="bankaccount2" class="form-control" name="bankaccounts">
                 <option selected>select</option>
-                <option value="One">Yes</option>
-                <option value="Two">No</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
               </select>
             </div>
           </div>
 
-          <div id="showOne" class="myDiv px-5">
+          <div id="showYes" class="myDiv px-5">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="banknumber"># of Bank Accounts</label>
@@ -263,7 +263,7 @@ header_image:   dashboard_header1.png
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="bankpositive">Are the statement balances positive (debit) amounts in your books?</label>
-                <select id="bankpositive" class="form-control">
+                <select id="bankpositive" class="form-control" name>
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -274,7 +274,7 @@ header_image:   dashboard_header1.png
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="banktransfers">Are transfers between bank/credit/gateway accounts being handled correctly?</label>
-                <select id="banktransfers" class="form-control">
+                <select id="banktransfers" class="form-control" name>
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -289,19 +289,19 @@ header_image:   dashboard_header1.png
           <div class="form-row">
             <div class="form-group col-md-12">
               <label for="myselection2">Do you use clearing accounts (i.e. credit cards in transit)?</label>
-              <select id="myselection2" class="form-control">
+              <select id="myselection2" class="form-control" name>
                 <option selected>select</option>
-                <option value="One">Yes</option>
-                <option value="Two">No</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
                 <option value="Unknown">I don't know</option>
               </select>
             </div>
           </div>
-          <div id="show2One" class="myDiv2 px-5">
+          <div id="show2Yes" class="myDiv2 px-5">
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="clearingbank">Are clearing accounts set up as bank accounts in your accounting software or as current assets?</label>
-                <select id="clearingbank" class="form-control">
+                <select id="clearingbank" class="form-control" name>
                   <option selected>select</option>
                   <option value="BankAccount">Bank</option>
                   <option value="CurrentAsset">Current Asset</option>
@@ -312,7 +312,7 @@ header_image:   dashboard_header1.png
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label for="clearingtransfer">Are the clearing amounts that come into the bank account transferred into the clearing account?</label>
-                  <select id="clearingtransfer" class="form-control">
+                  <select id="clearingtransfer" class="form-control" name>
                     <option selected>select</option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
@@ -323,7 +323,7 @@ header_image:   dashboard_header1.png
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label for="clearingadjusting">Is the statement balance adjusting or does it need to be adjusted manually?</label>
-                  <select id="clearingadjusting" class="form-control">
+                  <select id="clearingadjusting" class="form-control" name>
                     <option selected>select</option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
@@ -335,7 +335,7 @@ header_image:   dashboard_header1.png
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="clearingzero">Do clearing accounts ever get close to zero?</label>
-                <select id="clearingzero" class="form-control">
+                <select id="clearingzero" class="form-control" name>
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -346,7 +346,7 @@ header_image:   dashboard_header1.png
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="clearingbalance">Do clearing accounts maintain a regular average balance?</label>
-                <select id="clearingbalance" class="form-control">
+                <select id="clearingbalance" class="form-control" name>
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -357,7 +357,7 @@ header_image:   dashboard_header1.png
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="clearingchange">Do clearing accounts increase and/or decrease without an entry offsetting the amount?</label>
-                <select id="clearingchange" class="form-control">
+                <select id="clearingchange" class="form-control" name>
                   <option selected>select</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -372,7 +372,7 @@ header_image:   dashboard_header1.png
           <div class="form-row">
             <div class="form-group col-md-12">
               <label for="acceptcredit">Do you accept credit cards as payment from customers/clients?</label>
-              <select id="acceptcredit" class="form-control">
+              <select id="acceptcredit" class="form-control" name>
                 <option selected>select</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -385,8 +385,8 @@ header_image:   dashboard_header1.png
                 <label for="merchantfee">Does your merchant service provider break out fee information per transaction?</label>
                 <select id="merchantfee" class="form-control">
                   <option selected>select</option>
-                  <option value="One">Yes</option>
-                  <option value="Two">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
                   <option value="Unknown">I don't know</option>
                 </select>
               </div>
