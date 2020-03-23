@@ -68,6 +68,7 @@ a.dark {
   background-color: #A3FFF6;
 }
 
+
 .beach_blue_text {
  color:#A3FFF6 !important;
 }
@@ -141,6 +142,10 @@ a.dark {
 .stdContainer {
   padding-top: 130px;
   padding-bottom: 130px;
+}
+
+.stdContainerTall {
+  min-height:550px;
 }
 
 .smallContainer {
@@ -320,12 +325,17 @@ p {
   font-weight: normal !important;
 }
 
+.superbold {
+  font-weight:800;
+}
+
 h1 {
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
   letter-spacing: -1px;
 }
+
 
 h2 {
   font-size: 28px;
@@ -379,6 +389,10 @@ h6 {
   background-color: #ffffff;
   border-radius: 0rem;
   margin-bottom:0px;
+}
+
+.jumbotron_light {
+  background: url('/assets/images/jumbotron_light.png');
 }
 
 .header_image {
@@ -483,6 +497,12 @@ h6 {
   height: 36px;
 }
 
+.icon_techstack {
+  background: url('/assets/images/icon_techstack.png') 34px 36px;
+  width: 34px;
+  height: 36px;
+}
+
 .icon_payroll_yellow {
   background: url('/assets/images/icon_payroll_yellow.png') 36px 36px;
   width: 36px;
@@ -546,6 +566,54 @@ h6 {
   height: 36px;
 }
 
+.pricingBox {
+  min-height: 550px;
+}
+
+.pricingIllustration {
+  background-color:#F5F2F2;
+  height:auto;
+  padding-top:100px;
+  margin-bottom:-500px;
+}
+.pricingHeader {
+  background-color:#181818 !important;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color:#ffffff;
+  font-weight:400;
+  font-size: 16px;
+  line-height: 24px;
+  height:60px;
+  margin-bottom:-6px;
+  z-index: 4;
+  position: relative;
+  font-weight:600;
+}
+
+.pricingHeaderClear {
+  height:60px;
+  z-index: 4;
+  position: relative;
+}
+
+.headerVertical {
+  padding-top:18px;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.pt6px {
+  padding-top:6px;
+}
+
+.unevenBeachBlue.mb-n4 {
+  z-index:1;
+  position:relative;
+  height: 24px;
+}
 
 .small {
   font-size: 16px;
@@ -557,6 +625,20 @@ h6 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.1px;
+}
+
+.min480 {
+  min-width: 480px;
+}
+
+.card {
+  border:none;
+}
+.card-header {
+  border: none;
+  background-color:#F5F2F2;
+  border-radius:none;
+  cursor: pointer;
 }
 
 .small32 {
