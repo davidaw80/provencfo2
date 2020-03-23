@@ -4,6 +4,7 @@ body {
   height: 100%;
   font-family: 'Libre Franklin';
   font-style: normal;
+  color: #181818;
 }
 
 .sidebar {
@@ -1011,15 +1012,50 @@ h6 {
 }
 
 .backsplashtest {
-  background-image: url('/assets/images/backsplashtest.png');
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0)), url('/assets/images/backsplashtest.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
-  height:600px;
+  height:700px;
   background-color:white;
 }
+
+.backsplashtest2 {
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0)), url('/assets/images/backsplashtest2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height:700px;
+  background-color:white;
+}
+
+.backsplashtest3 {
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0)), url('/assets/images/backsplashtest3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height:700px;
+  background-color:white;
+}
+
+.backsplashtest4 {
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0)), url('/assets/images/backsplashtest4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height:700px;
+  background-color:white;
+}
+
+
 .col-2dot4,
 .col-sm-2dot4,
 .col-md-2dot4,
