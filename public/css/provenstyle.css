@@ -997,6 +997,15 @@ h6 {
   height:230px;
 }
 
+.darkBtn {
+  font-weight: bold;
+}
+
+.darkBtn.active {
+  background-color: #ffffff;
+  color:#181818;
+}
+
 .newIcon {
   font-weight: 600;
   font-size: 16px;

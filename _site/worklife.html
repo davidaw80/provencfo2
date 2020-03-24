@@ -517,6 +517,24 @@
             $("div.myDiv29").hide();
             $("#show29"+demovalue).show();
         });
+        $('#all').on('click', function(){
+            $("div.showaccounting").show();
+            $("div.showcommunication").show();
+            $("div.showanalytics").show();
+            $("div.showfinance").show();
+            $("div.showHR").show();
+            $("div.showsales").show();
+            $("div.showother").show();
+        });
+        $('#accounting').on('click', function(){
+            $("div.showaccounting").show();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").hide();
+            $("div.showfinance").hide();
+            $("div.showHR").hide();
+            $("div.showsales").hide();
+            $("div.showother").hide();
+        });
     });
     </script>
     <script>
