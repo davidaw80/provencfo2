@@ -999,11 +999,43 @@ h6 {
 
 .darkBtn {
   font-weight: bold;
+  cursor: pointer;
 }
 
-.darkBtn.active {
+.darkBtn.active, .darkBtn:hover {
   background-color: #ffffff;
   color:#181818;
+}
+
+.showaccounting .border.border-dark.color_box .row.justify-content-center {
+  min-height:240px;
+  border-bottom: #A3FFF6 10px solid !important;
+  border-radius: 6px;
+}
+.showcommunication .border.border-dark.color_box .row.justify-content-center {
+  min-height:240px;
+  border-bottom: #FFE68E 10px solid !important;
+  border-radius: 6px;
+}
+.showanalytics .border.border-dark.color_box .row.justify-content-center  {
+  min-height:240px;
+  border-bottom: #A4AEF1 10px solid !important;
+  border-radius: 6px;
+}
+.showfinance .border.border-dark.color_box .row.justify-content-center  {
+  min-height:240px;
+  border-bottom: #5892E6 10px solid !important;
+  border-radius: 6px;
+}
+.showHR .border.border-dark.color_box .row.justify-content-center  {
+  min-height:240px;
+  border-bottom: #EC7965 10px solid !important;
+  border-radius: 6px;
+}
+.showsales .border.border-dark.color_box .row.justify-content-center  {
+  min-height:240px;
+  border-bottom: #5BCE81 10px solid !important;
+  border-radius: 6px;
 }
 
 .newIcon {

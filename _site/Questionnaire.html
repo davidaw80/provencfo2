@@ -1654,26 +1654,65 @@
             $("div.myDiv29").hide();
             $("#show29"+demovalue).show();
         });
-        $('#all').on('click', function(){
+        $('#all-tab').on('click', function(){
             $("div.showaccounting").show();
             $("div.showcommunication").show();
             $("div.showanalytics").show();
             $("div.showfinance").show();
             $("div.showHR").show();
             $("div.showsales").show();
-            $("div.showother").show();
         });
-        $('#accounting').on('click', function(){
+        $('#accounting-tab').on('click', function(){
             $("div.showaccounting").show();
             $("div.showcommunication").hide();
             $("div.showanalytics").hide();
             $("div.showfinance").hide();
             $("div.showHR").hide();
             $("div.showsales").hide();
-            $("div.showother").hide();
+        });
+        $('#communication-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").show();
+            $("div.showanalytics").hide();
+            $("div.showfinance").hide();
+            $("div.showHR").hide();
+            $("div.showsales").hide();
+        });
+        $('#analytics-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").show();
+            $("div.showfinance").hide();
+            $("div.showHR").hide();
+            $("div.showsales").hide();
+        });
+        $('#finance-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").hide();
+            $("div.showfinance").show();
+            $("div.showHR").hide();
+            $("div.showsales").hide();
+        });
+        $('#HR-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").hide();
+            $("div.showfinance").hide();
+            $("div.showHR").show();
+            $("div.showsales").hide();
+        });
+        $('#sales-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").hide();
+            $("div.showfinance").hide();
+            $("div.showHR").hide();
+            $("div.showsales").show();
         });
     });
     </script>
+
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
@@ -1695,7 +1734,6 @@
     })();
     </script>
     
-
 
 
 
