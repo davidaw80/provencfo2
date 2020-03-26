@@ -26,24 +26,25 @@ header_image:   dashboard_header1.png
 <div class="blackBanner text-white">
   <div class="container py-4">
 
-    <div class="row justify-content-center">
-      <div class="mx-4 px-2 my-1 darkBtn active" id="all">All</div>
-      <div class="mx-4 px-2 my-1 darkBtn" id="accounting">Accounting</div>
-      <div class="mx-4 px-2 my-1 darkBtn" id="communication">Communication</div>
-      <div class="mx-4 px-2 my-1 darkBtn" id="analytics">Analytics</div>
-      <div class="mx-4 px-2 my-1 darkBtn" id="finance">Finance</div>
-      <div class="mx-4 px-2 my-1 darkBtn" id="HR">HR</div>
-      <div class="mx-4 px-2 my-1 darkBtn" id="sales">Sales</div>
-      <div class="mx-4 px-2 my-1 darkBtn" id="other">Other</div>
+    <div class="row justify-content-center nav nav-tab" id="activeDiv" role="myTab">
+      <div class="mx-4 px-2 my-1 darkBtn active" id="all-tab" data-toggle="tab" role="tab" aria-controls="all" aria-selected="true">All</div>
+      <div class="mx-4 px-2 my-1 darkBtn" id="accounting-tab" data-toggle="tab" role="tab" aria-controls="accounting" aria-selected="false">Accounting</div>
+      <div class="mx-4 px-2 my-1 darkBtn" id="communication-tab" data-toggle="tab" role="tab" aria-controls="communication" aria-selected="false">Communication</div>
+      <div class="mx-4 px-2 my-1 darkBtn" id="analytics-tab" data-toggle="tab" role="tab" aria-controls="analytics" aria-selected="false">Analytics</div>
+      <div class="mx-4 px-2 my-1 darkBtn" id="finance-tab" data-toggle="tab" role="tab" aria-controls="finance" aria-selected="false">Finance</div>
+      <div class="mx-4 px-2 my-1 darkBtn" id="HR-tab" data-toggle="tab" role="tab" aria-controls="HR" aria-selected="false">HR</div>
+      <div class="mx-4 px-2 my-1 darkBtn" id="sales-tab" data-toggle="tab" role="tab" aria-controls="sales" aria-selected="false">Sales</div>
     </div>
+
+
   </div>
 </div>
 
 <div class="container">
   <div class="row justify-content-center mt-5">
     <div class="col-10 col-lg-4 mb-5 showaccounting">
-      <div class="border border-dark color_box bg-white p-5 mx-0">
-        <div class="row justify-content-center">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
           <div class="col-12">
               <p class="bold">ApprovalMax</p>
               <div>
@@ -54,8 +55,8 @@ header_image:   dashboard_header1.png
       </div>
     </div>
     <div class="col-10 col-lg-4 mb-5 showcommunication">
-      <div class="border border-dark color_box bg-white p-5 mx-0">
-        <div class="row justify-content-center">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
           <div class="col-12">
               <p class="bold">Asana</p>
               <div>
@@ -65,9 +66,9 @@ header_image:   dashboard_header1.png
         </div>
       </div>
     </div>
-    <div class="col-10 col-lg-4 mb-5">
-      <div class="border border-dark color_box bg-white p-5 mx-0">
-        <div class="row justify-content-center">
+    <div class="col-10 col-lg-4 mb-5 showaccounting">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
           <div class="col-12">
               <p class="bold">Bill.com</p>
               <div>
@@ -77,9 +78,9 @@ header_image:   dashboard_header1.png
         </div>
       </div>
     </div>
-    <div class="col-10 col-lg-4 mb-5">
-      <div class="border border-dark color_box bg-white p-5 mx-0">
-        <div class="row justify-content-center">
+    <div class="col-10 col-lg-4 mb-5 showanalytics">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
           <div class="col-12">
               <p class="bold">BizEquity</p>
               <div>
@@ -89,9 +90,9 @@ header_image:   dashboard_header1.png
         </div>
       </div>
     </div>
-    <div class="col-10 col-lg-4 mb-5">
-      <div class="border border-dark color_box bg-white p-5 mx-0">
-        <div class="row justify-content-center">
+    <div class="col-10 col-lg-4 mb-5 showfinance">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
           <div class="col-12">
               <p class="bold">Brex</p>
               <div>
@@ -101,9 +102,9 @@ header_image:   dashboard_header1.png
         </div>
       </div>
     </div>
-    <div class="col-10 col-lg-4 mb-5">
-      <div class="border border-dark color_box bg-white p-5 mx-0">
-        <div class="row justify-content-center">
+    <div class="col-10 col-lg-4 mb-5 showaccounting">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
           <div class="col-12">
               <p class="bold">Clio</p>
               <div>
@@ -113,6 +114,296 @@ header_image:   dashboard_header1.png
         </div>
       </div>
     </div>
+    <div class="col-10 col-lg-4 mb-5 showsales">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Copper</p>
+              <div>
+                <div class="d-inline-block">A CRM for G Suite. Manage all your contacts, deals, emails, files, and more in one place.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showaccounting">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">DEAR Systems</p>
+              <div>
+                <div class="d-inline-block">Full range ERP for Manufacturing, Point of Sale, and Inventory Management.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showfinance">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Divvy</p>
+              <div>
+                <div class="d-inline-block">Leading spend and expense management platform for business.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showanalytics">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Dryrun</p>
+              <div>
+                <div class="d-inline-block">Cash flow forecasting software for pros. Cash flow management and revenue forecasting.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showHR">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Everhour</p>
+              <div>
+                <div class="d-inline-block">Accurate time tracking for invoicing, project management, or payroll.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showanalytics">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Fathom</p>
+              <div>
+                <div class="d-inline-block">Comprehensive financial intelligence, reporting, dashboards and consolidations.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showHR">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Fivver</p>
+              <div>
+                <div class="d-inline-block">Work with verified, exceptional talent, hand-vetted for stellar quality and service.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showHR">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Gusto</p>
+              <div>
+                <div class="d-inline-block">Gusto makes it easy to onboard, pay, insure, and support your hardworking team.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showcommunication">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Gsuite</p>
+              <div>
+                <div class="d-inline-block">Everything you need in one place: Gmail, Docs, Drive, Calendar, Meet and more.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showcommunication">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Hiver</p>
+              <div>
+                <div class="d-inline-block">Your Gmail inbox, enhanced with Hiver. Making shared inboxes fast and collaborative.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showanalytics">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Jirav</p>
+              <div>
+                <div class="d-inline-block">Financial planning and analytics in the cloud. Visualize data to understand your business.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showanalytics">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Klipfolio</p>
+              <div>
+                <div class="d-inline-block">Business analytics for data driven people. One place for all your answers.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showcommunication">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Knack</p>
+              <div>
+                <div class="d-inline-block">Knack gives you simple tools to transform your data into a powerful online database.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showHR">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Lessonly</p>
+              <div>
+                <div class="d-inline-block">Lessonly is the powerfully simple way for teams to learn and practice like never before.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showsales">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">PandaDoc</p>
+              <div>
+                <div class="d-inline-block">Empowering sales teams to create, negotiate and eSign proposals, quotes & contracts.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showsales">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Reply</p>
+              <div>
+                <div class="d-inline-block">Multichannel sales engagement platform that automates personal email outreach.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showaccounting">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Track1099</p>
+              <div>
+                <div class="d-inline-block">IRS approved online e-filing solution for 1099’s, W2’s, W9’s and more.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showcommunication">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Slack</p>
+              <div>
+                <div class="d-inline-block">Puts collaboration at your fingertips allowing efficient teamwork for every enterprise.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showanalytics">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Spider Strategies</p>
+              <div>
+                <div class="d-inline-block">Automated Balanced Scorecards and comprehensive KPI solution.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showfinance">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Stripe</p>
+              <div>
+                <div class="d-inline-block">Stripe is the new standard in online payments. Great for running an internet business.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showfinance">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Veem</p>
+              <div>
+                <div class="d-inline-block">A new standard for global payments. International and domestic money transfers.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showsales">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Workable</p>
+              <div>
+                <div class="d-inline-block">The world’s leading hiring platform. Providing hiring teams ways to find the best candidates.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showaccounting">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Workflow Max</p>
+              <div>
+                <div class="d-inline-block">Project Management - quoting, scheduling, time tracking, invoicing & reporting.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-lg-4 mb-5 showaccounting">
+      <div class="border border-dark color_box bg-white">
+        <div class="row justify-content-center p-5 mx-0">
+          <div class="col-12">
+              <p class="bold">Xero</p>
+              <div>
+                <div class="d-inline-block">Online accounting software for small business. Xero integrates with 800+ apps.</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>
 

@@ -134,6 +134,11 @@ a.dark {
   background-color: #F5F2F2 !important;
 }
 
+.square580 {
+  width: 580px;
+  height: 580px;
+}
+
 .container {
   max-width: 1440px;
   margin:0 auto;
@@ -389,10 +394,27 @@ h6 {
   background-color: #ffffff;
   border-radius: 0rem;
   margin-bottom:0px;
+  min-height:620px;
 }
 
 .jumbotron_light {
   background: url('/assets/images/jumbotron_light.png');
+}
+
+.not-actually {
+  top:100px;
+  left:0px;
+  max-width:150px;
+}
+
+.not-actually-highlight {
+    background-color:#A3FFF6;
+}
+
+.jumboimg {
+  align-items: flex-end;
+  align-self: center;
+  max-height:560px;
 }
 
 .header_image {
@@ -512,6 +534,12 @@ h6 {
   background: url('/assets/images/icon_billpay_red.png') 36px 36px;
   width: 36px;
   height: 36px;
+}
+
+.icon_CFOapp_blue {
+  background: url('/assets/images/icon_CFOapp_blue_1.png') 32px 33px;
+  width: 32px;
+  height: 33px;
 }
 
 .icon_CFOadvisory_purple {
@@ -797,6 +825,12 @@ h6 {
   width: 64px;
   height: 64px;
 }
+
+.icon_feedback {
+  background: url('/assets/images/icon_feedback.png') 64px 64px;
+  width: 64px;
+  height: 64px;
+}
 .icon_structure {
   background: url('/assets/images/icon_structure.png') 64px 64px;
   width: 64px;
@@ -832,11 +866,8 @@ h6 {
   width: 64px;
   height: 64px;
 }
-.icon_CFOapp_blue {
-  background: url('/assets/images/icon_CFOapp_blue.png') 64px 64px;
-  width: 64px;
-  height: 64px;
-}
+
+
 .icon_givingback {
   background: url('/assets/images/icon_givingback.png') 62px 60px;
   width: 62px;
@@ -999,11 +1030,43 @@ h6 {
 
 .darkBtn {
   font-weight: bold;
+  cursor: pointer;
 }
 
-.darkBtn.active {
+.darkBtn.active, .darkBtn:hover {
   background-color: #ffffff;
   color:#181818;
+}
+
+.showaccounting .border.border-dark.color_box .row.justify-content-center {
+  min-height:240px;
+  border-bottom: #A3FFF6 10px solid !important;
+  border-radius: 6px;
+}
+.showcommunication .border.border-dark.color_box .row.justify-content-center {
+  min-height:240px;
+  border-bottom: #FFE68E 10px solid !important;
+  border-radius: 6px;
+}
+.showanalytics .border.border-dark.color_box .row.justify-content-center  {
+  min-height:240px;
+  border-bottom: #A4AEF1 10px solid !important;
+  border-radius: 6px;
+}
+.showfinance .border.border-dark.color_box .row.justify-content-center  {
+  min-height:240px;
+  border-bottom: #5892E6 10px solid !important;
+  border-radius: 6px;
+}
+.showHR .border.border-dark.color_box .row.justify-content-center  {
+  min-height:240px;
+  border-bottom: #EC7965 10px solid !important;
+  border-radius: 6px;
+}
+.showsales .border.border-dark.color_box .row.justify-content-center  {
+  min-height:240px;
+  border-bottom: #5BCE81 10px solid !important;
+  border-radius: 6px;
 }
 
 .newIcon {
