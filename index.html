@@ -16,8 +16,11 @@ header_image:   dashboard_header1.png
         <form class="form-inline mt-5 mb-4">
           <div class="input-group mb-3 rounded-left">
 
-            <form name="newemail" class="newquestion" method="POST" netlify netlify-honeypot="bot-field" action="Questionnaire.html" novalidate>
-              <input type="email" class="form-control py-4 pr-5 border border-dark" id="email" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+            <form name="newemail" class="newemail" method="POST" netlify netlify-honeypot="bot-field" action="success.html" novalidate>
+              <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+              <input type="email" class="form-control py-4 pr-5 border border-dark" id="email" name="email" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2" required>
                 <div class="invalid-feedback">
                   Please provide a valid email address
                 </div>
