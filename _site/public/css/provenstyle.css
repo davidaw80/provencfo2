@@ -390,12 +390,19 @@ h6 {
   height: 47px;
 }
 
-.jumbotron {
+.jumbotron.pb-0 {
   background-color: #ffffff;
   border-radius: 0rem;
   margin-bottom:0px;
   min-height:620px;
 }
+
+.jumbotron {
+  background-color: #ffffff;
+  border-radius: 0rem;
+  margin-bottom:0px;
+}
+
 
 .jumbotron_light {
   background: url('/assets/images/jumbotron_light.png');
