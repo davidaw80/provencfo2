@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
     <link rel="manifest" href="/assets/images/site.webmanifest">
     <!-- Browser Site Name -->
-    <title>ProvenCFO - Trusted Financial Partner</title>
+    <title>Proven - Trusted Financial Partner</title>
     
     <meta name="author" content="">
     <!-- Enable responsive viewport -->
@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="/public/css/provenstyle.css">
     <!-- ADDING STUFF FOR META HEADERS -->
     
-    <meta property="og:title" content="ProvenCFO - Trusted Financial Partner">
+    <meta property="og:title" content="Proven - Trusted Financial Partner">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://localhost:4000/">
     <meta property="og:image" content="http://localhost:4000">
@@ -55,7 +55,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@">
-    <meta name="twitter:title" content="ProvenCFO - Trusted Financial Partner">
+    <meta name="twitter:title" content="Proven - Trusted Financial Partner">
     <meta name="twitter:description" content="Your Trusted Business Advisor. Growing a business is challenging. ProvenCFO will guide you through every stage of your growth.">
     <meta name="twitter:image" content="
     ">
@@ -92,7 +92,7 @@
                   <a class="dropdown-item" href="billpay.html">Bill Pay</a>
                   <a class="dropdown-item" href="CFOadvisory.html">CFO Advisory</a>
                   <a class="dropdown-item" href="Capitaladvisory.html">Capital Advisory</a>
-                  <a class="dropdown-item" href="#">CFO App</a>
+                  <a class="dropdown-item" href="CFOapp.html">CFO App</a>
                 </div>
               </li>
               <li class="nav-item mr-4 bold">
@@ -136,9 +136,9 @@
 
 
 
-<div class="jumbotron">
+<div class="jumbotron mt-5 pb-0">
   <div class="container mt-5 pt-5">
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-lg-5 col-sm-8 col-12">
         <h1 class="mt-5">Your <span class="beach_blue px-2">Trusted</span> Business Advisor</h1>
         <h2 class="mt-5">Growing a business is challenging. ProvenCFO will <span class="bold">guide you</span> through every stage of your growth.</h2>
@@ -151,16 +151,16 @@
           </div>
         </form>
         <div class="container">
-          <div class="row">
+          <div class="row pb-5">
             <div class="check_mark2 mt-1"></div><div class="ml-2 mr-4">Easy setup</div>
             <div class="check_mark2 mt-1"></div><div class="ml-2 mr-4">Expert support</div>
             <div class="check_mark2 mt-1"></div><div class="ml-2">Cancel anytime</div>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-7 col-sm-12 col-12">
-          <img src="/assets/images/Illustration_01.png" class="img-fluid" alt="Responsive image">
+      <div class="col-lg-7 col-sm-12 col-12 my-0" style="display: flex;">
+          <img src="/assets/images/Slice - Dave.png" class="img-fluid jumboimg" alt="Responsive image">
+          <div class="position-absolute float-left not-actually"><span class="not-actually-highlight">* Not actually Dave! Pics postponed due to COVID-19 :(</span></div>
       </div>
     </div>
   </div>
@@ -280,7 +280,7 @@
         <div class="newIcon text-center px-2 float-right py-1 mr-3">NEW</div>
         <h6 class="bold ml-5">CFO App</h6>
         <p class="small mx-5 mt-4 inner">We’ve built an <span class="bold">industry leading tool</span> to streamline financial communication and provide detailed reporting.</p>
-        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button_cfoapp">
+        <button class="btn btn-primary white px-2 ml-5 mt-2 mb-5" type="button" id="button_cfoapp" onclick="window.location.href = 'CFOApp.html';">
           <div class="d-flex justify-content-center">
             <div class="d-inline p-1" align="center"><p class="small bold text-center mb-0">Learn more</p></div>
             <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
@@ -556,26 +556,65 @@
             $("div.myDiv29").hide();
             $("#show29"+demovalue).show();
         });
-        $('#all').on('click', function(){
+        $('#all-tab').on('click', function(){
             $("div.showaccounting").show();
             $("div.showcommunication").show();
             $("div.showanalytics").show();
             $("div.showfinance").show();
             $("div.showHR").show();
             $("div.showsales").show();
-            $("div.showother").show();
         });
-        $('#accounting').on('click', function(){
+        $('#accounting-tab').on('click', function(){
             $("div.showaccounting").show();
             $("div.showcommunication").hide();
             $("div.showanalytics").hide();
             $("div.showfinance").hide();
             $("div.showHR").hide();
             $("div.showsales").hide();
-            $("div.showother").hide();
+        });
+        $('#communication-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").show();
+            $("div.showanalytics").hide();
+            $("div.showfinance").hide();
+            $("div.showHR").hide();
+            $("div.showsales").hide();
+        });
+        $('#analytics-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").show();
+            $("div.showfinance").hide();
+            $("div.showHR").hide();
+            $("div.showsales").hide();
+        });
+        $('#finance-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").hide();
+            $("div.showfinance").show();
+            $("div.showHR").hide();
+            $("div.showsales").hide();
+        });
+        $('#HR-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").hide();
+            $("div.showfinance").hide();
+            $("div.showHR").show();
+            $("div.showsales").hide();
+        });
+        $('#sales-tab').on('click', function(){
+            $("div.showaccounting").hide();
+            $("div.showcommunication").hide();
+            $("div.showanalytics").hide();
+            $("div.showfinance").hide();
+            $("div.showHR").hide();
+            $("div.showsales").show();
         });
     });
     </script>
+
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
@@ -597,7 +636,6 @@
     })();
     </script>
     
-
 
 
 
