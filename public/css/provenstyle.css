@@ -488,6 +488,14 @@ h6 {
   position:relative;
 }
 
+.logo_finnemma {
+  background: url('/assets/images/logo_finnemma_white.png') 180px 112px;
+  width: 180px;
+  height: 112px;
+  left:-20px;
+  position:relative;
+}
+
 .logo_oxpine {
   background: url('/assets/images/logo_oxpine.png') 108px 38px;
   width: 108px;

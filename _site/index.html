@@ -148,10 +148,19 @@
         <h2 class="mt-5">Growing a business is challenging. ProvenCFO will <span class="bold">guide you</span> through every stage of your growth.</h2>
         <form class="form-inline mt-5 mb-4">
           <div class="input-group mb-3 rounded-left">
-            <input type="text" class="form-control py-4 pr-5 border border-dark " placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-primary white px-4" type="button" id="button-addon2">Get Started</button>
-            </div>
+
+            <form name="newemail" class="newquestion" method="POST" netlify netlify-honeypot="bot-field" action="Questionnaire.html" novalidate>
+              <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+              <input type="email" class="form-control py-4 pr-5 border border-dark" id="email" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                <div class="invalid-feedback">
+                  Please provide a valid email address
+                </div>
+              <div class="input-group-append">
+                <button class="btn btn-primary white px-4" type="submit" id="button-addon2">Get Started</button>
+              </div>
+            </form>
           </div>
         </form>
         <div class="container">
@@ -173,17 +182,15 @@
 <div class="blackBanner text-white">
   <div class="container pb-5">
     <div class="pt-5"><h5 class="bold text-center">Hundreds of businesses trust ProvenCFO for growth</h5></div>
-    <div class="row mx-auto mt-4">
-      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_kiln"></div></div>
-      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_clarke"></div></div>
-      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_oxpine"></div></div>
-      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_kiln"></div></div>
-      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_clarke"></div></div>
-      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_oxpine"></div></div>
+    <div class="row mx-auto mt-5 justify-content-center">
+      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_kiln cursor" onclick="window.open('https://kiln.co/', '_blank')"></div></div>
+      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_clarke cursor"  onclick="window.open('http://clarkecp.com/', '_blank')"></div></div>
+      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_oxpine cursor"  onclick="window.open('https://oxandpine.com/', '_blank')"></div></div>
+      <div class="col-lg-2 col-sm-4 col-6"><div class="logo_finnemma cursor mt-n3" onclick="window.open('https://www.finnandemma.com/', '_blank')"></div></div>
     </div>
-      <div class="d-flex justify-content-center mt-4">
-        <div class="d-inline p-1" align="center"><p class="small bold text-center">Read customers stories</p></div>
-        <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>
+    <div class="d-flex justify-content-center mt-4">
+          <!--<div class="d-inline p-1" align="center"><p class="small bold text-center">Read customers stories</p></div>
+        <div class="d-inline p-2" align="center"><div class="rightWhiteArrow"></div></div>-->
       </div>
   </div>
 </div>
@@ -193,7 +200,7 @@
   <div class="row justify-content-center mb-md-n5">
     <div class="col-xl-6 col-lg-8 col-md-8 pb-md-5">
       <img src="/assets/images/office6square.jpg" class="img-fluid" alt="Responsive image">
-      <div class="position-absolute float-left emptyspace"><span class="emptyspace-highlight">* Empty due to COVID-19</span></div>
+      <div class="position-absolute float-left emptyspace"><span class="emptyspace-highlight">* Our new office ... Empty due to COVID-19</span></div>
     </div>
     <div class="col-xl-6 col-lg-8 col-md-8">
       <div class="mt-lg-0 mt-5"><div class="icon_difference"></div></div>
@@ -202,7 +209,7 @@
       <div class="mt-5"><div class="spacer"></div></div>
       <div class="mt-5"><p class="quote">"ProvenCFO implemented useful systems and processes in our fast growing business. They’ve significantly improved the clarity of our financial situation, saving us time, money and headaches. Highly recommend them."</p></div>
       <div class="mt-4"><p class="author"><span class="bold">Andrew Redpath</span>, COO & Co-founder</p></div>
-      <div class="logo_kiln_dark"></div>
+      <div class="logo_kiln_dark cursor" onclick="window.open('https://kiln.co/', '_blank')"></div>
     </div>
   </div>
 </div>
@@ -341,11 +348,11 @@
     <div class="col-9">
       <div class="row justify-content-center">
         <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="mx-auto pt-4 text-center"><p class="small">We're specialists in</p></div></div>
-        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="logo_xero mx-auto"></div></div>
-        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="logo_gusto mx-auto mt-2"></div></div>
-        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="logo_qb mx-auto"></div></div>
-        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="logo_stripe mx-auto"></div></div>
-        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="mx-auto pt-4 text-center"><p class="small">And much more</p></div></div>
+        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="logo_xero mx-auto cursor" onclick="window.open('https://www.xero.com/us/', '_blank')"></div></div>
+        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="logo_gusto mx-auto mt-2 cursor" onclick="window.open('https://gusto.com/', '_blank')"></div></div>
+        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="logo_qb mx-auto cursor" onclick="window.open('https://quickbooks.intuit.com/', '_blank')"></div></div>
+        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="logo_stripe mx-auto cursor" onclick="window.open('https://stripe.com/', '_blank')"></div></div>
+        <div class="col-xl-2 col-sm-6 col-8 mt-xl-0 mt-3"><div class="mx-auto pt-4 text-center cursor" onclick="window.location.href = 'tech.html';"><p class="small">And much more</p></div></div>
       </div>
     </div>
   </div>
