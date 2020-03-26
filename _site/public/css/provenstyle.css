@@ -414,8 +414,18 @@ h6 {
   max-width:150px;
 }
 
+.emptyspace {
+  top:100px;
+  left:50px;
+  max-width:200px;
+}
+
+.emptyspace-highlight {
+  background-color:#FFFFFF;
+}
+
 .not-actually-highlight {
-    background-color:#A3FFF6;
+  background-color:#A3FFF6;
 }
 
 .jumboimg {
